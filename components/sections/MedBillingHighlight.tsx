@@ -61,7 +61,7 @@ export default function MedBillingHighlight() {
 
           {/* Right: content */}
           <Reveal delay={150}>
-            <Label>// Medical Billing & RCM</Label>
+            <Label> Medical Billing & RCM</Label>
             <Heading className="mb-5">
               Maximize Your<br />
               <span style={{ color:"#00ff88" }}>Revenue Cycle</span>

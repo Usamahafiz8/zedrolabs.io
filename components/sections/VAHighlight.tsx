@@ -13,7 +13,7 @@ export default function VAHighlight() {
       <div className="section-wrap relative z-10">
         <div className="text-center mb-14">
           <Reveal>
-            <Label className="justify-center">// Virtual Assistants</Label>
+            <Label className="justify-center"> Virtual Assistants</Label>
             <Heading className="mb-4">
               Expert VAs From<br />
               <span className="text-gradient">$400/Month</span>

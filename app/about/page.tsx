@@ -11,9 +11,10 @@ export const metadata: Metadata = {
   keywords: ["ZedroLabs about", "software company Rawalpindi", "IT company Pakistan", "offshore development company"],
 };
 
+
 export default function AboutPage() {
   return (
-    <>
+    <div>
       <section className="pt-16 bg-[#080c14] relative overflow-hidden min-h-[60vh] flex items-center">
         <div className="bg-grid absolute inset-0 pointer-events-none opacity-60"
           style={{ backgroundImage:"linear-gradient(rgba(193,39,45,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(193,39,45,0.04) 1px,transparent 1px)", backgroundSize:"64px 64px",
@@ -44,7 +45,7 @@ export default function AboutPage() {
         <div className="section-wrap">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <Reveal>
-              <Label>// Our Story</Label>
+              <Label>Our Story</Label>
               <Heading className="mb-5">Built on Excellence,<br /><span className="text-gradient">Delivered Daily</span></Heading>
               <p className="text-[#a8b8d8] mb-4">Founded in {COMPANY.founded} in Rawalpindi, ZedroLabs was built on a simple premise: Pakistan has world-class engineering talent, and the world deserves access to it at fair prices.</p>
               <p className="text-[#a8b8d8] mb-4">Over 8+ years, we&apos;ve evolved from a web agency to a full-service IT company covering custom software, AI, blockchain, healthcare technology, and virtual services — all from one roof.</p>
@@ -71,7 +72,7 @@ export default function AboutPage() {
       {/* Values */}
       <section className="py-section bg-[#080c14]">
         <div className="section-wrap">
-          <Reveal><Label>// Core Values</Label><Heading className="mb-12">What Drives Us</Heading></Reveal>
+          <Reveal><Label> Core Values</Label><Heading className="mb-12">What Drives Us</Heading></Reveal>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
               { icon:"🚀", t:"Ship Fast",           d:"Agile delivery, sprint-based development, continuous deployment." },
@@ -94,7 +95,7 @@ export default function AboutPage() {
       {/* Team */}
       <section className="py-section bg-[#0d1220]">
         <div className="section-wrap">
-          <Reveal><Label>// Leadership</Label><Heading className="mb-12">Meet the <span className="text-gradient">Team</span></Heading></Reveal>
+          <Reveal><Label> Leadership</Label><Heading className="mb-12">Meet the <span className="text-gradient">Team</span></Heading></Reveal>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {TEAM.map((m, i) => (
               <Reveal key={m.name} delay={i * 70}>
@@ -117,7 +118,7 @@ export default function AboutPage() {
       {/* Tech */}
       <section className="py-section bg-[#080c14]">
         <div className="section-wrap">
-          <Reveal><Label>// Technologies</Label><Heading className="mb-10">Our Tech <span className="text-gradient">Stack</span></Heading></Reveal>
+          <Reveal><Label> Technologies</Label><Heading className="mb-10">Our Tech <span className="text-gradient">Stack</span></Heading></Reveal>
           <Reveal delay={100}>
             <div className="flex flex-wrap gap-2.5">
               {Object.values(TECH_STACK).flat().map((t) => (
@@ -132,12 +133,12 @@ export default function AboutPage() {
 
       <section className="py-section bg-[#0d1220]">
         <div className="max-w-[800px] mx-auto px-5">
-          <Reveal><Label>// FAQ</Label><Heading className="mb-10">Frequently Asked</Heading></Reveal>
+          <Reveal><Label> FAQ</Label><Heading className="mb-10">Frequently Asked</Heading></Reveal>
           <Reveal delay={100}><FAQAccordion faqs={FAQS} /></Reveal>
         </div>
       </section>
 
       <CTASection />
-    </>
+    </div>
   );
 }

@@ -70,7 +70,7 @@ export default function Web3Page() {
       <section className="py-section bg-[#0d1220]">
         <div className="section-wrap">
           <Reveal>
-            <Label>// Services</Label>
+            <Label> Services</Label>
             <Heading className="mb-12">Web3 Development<br /><span className="text-gradient">Services</span></Heading>
           </Reveal>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -91,7 +91,7 @@ export default function Web3Page() {
       <section className="py-20 bg-[#080c14]">
         <div className="section-wrap">
           <Reveal>
-            <Label>// Blockchain Networks</Label>
+            <Label> Blockchain Networks</Label>
             <Heading className="mb-10">Multi-Chain <span className="text-gradient">Expertise</span></Heading>
           </Reveal>
           <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-3">
@@ -112,9 +112,9 @@ export default function Web3Page() {
         <div className="section-wrap">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <Reveal>
-              <Label>// Why ZedroLabs Web3</Label>
+              <Label> Why ZedroLabs Web3</Label>
               <Heading className="mb-6">Security-First <span style={{ color:"#00d4ff" }}>Web3</span><br />Development</Heading>
-              <p className="text-[#a8b8d8] mb-8">Every contract we ship goes through rigorous security review. We've never had a post-launch exploit.</p>
+              <p className="text-[#a8b8d8] mb-8">Every contract we ship goes through rigorous security review. We&apos;ve never had a post-launch exploit.</p>
               <ul className="space-y-3">
                 {[
                   "All contracts internally audited before deployment",
@@ -154,7 +154,7 @@ export default function Web3Page() {
       <section className="py-20 bg-[#080c14]">
         <div className="section-wrap">
           <Reveal>
-            <Label>// Tech Stack</Label>
+            <Label> Tech Stack</Label>
             <Heading className="mb-8">Blockchain <span className="text-gradient">Tools We Use</span></Heading>
           </Reveal>
           <Reveal delay={100}>
@@ -172,7 +172,7 @@ export default function Web3Page() {
       {/* FAQ */}
       <section className="py-section bg-[#0d1220]">
         <div className="max-w-[800px] mx-auto px-5">
-          <Reveal><Label>// FAQ</Label><Heading className="mb-10">Web3 Questions Answered</Heading></Reveal>
+          <Reveal><Label> FAQ</Label><Heading className="mb-10">Web3 Questions Answered</Heading></Reveal>
           <Reveal delay={100}><FAQAccordion faqs={WEB3_FAQS} /></Reveal>
         </div>
       </section>

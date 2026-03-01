@@ -54,7 +54,7 @@ export default function VirtualAssistantsPage() {
       {/* VA Services */}
       <section className="py-section bg-[#0d1220]">
         <div className="section-wrap">
-          <Reveal><Label>// What VAs Can Do</Label><Heading className="mb-12">VA <span className="text-gradient">Specialties</span></Heading></Reveal>
+          <Reveal><Label> What VAs Can Do</Label><Heading className="mb-12">VA <span className="text-gradient">Specialties</span></Heading></Reveal>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {VA_SERVICES.map((s, i) => (
               <Reveal key={s.title} delay={i * 60}>
@@ -73,7 +73,7 @@ export default function VirtualAssistantsPage() {
       <section className="py-section bg-[#080c14]">
         <div className="section-wrap">
           <div className="text-center mb-14">
-            <Reveal><Label className="justify-center">// Pricing</Label><Heading>Simple, Transparent<br /><span className="text-gradient">Pricing</span></Heading></Reveal>
+            <Reveal><Label className="justify-center"> Pricing</Label><Heading>Simple, Transparent<br /><span className="text-gradient">Pricing</span></Heading></Reveal>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-[960px] mx-auto">
             {VA_PRICING.map((tier, i) => (
@@ -108,7 +108,7 @@ export default function VirtualAssistantsPage() {
         <div className="section-wrap">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <Reveal>
-              <Label>// Why Our VAs?</Label>
+              <Label> Why Our VAs?</Label>
               <Heading className="mb-6">Not Just<br /><span className="text-gradient">Contractors</span></Heading>
               <p className="text-[#a8b8d8] mb-8">Our VAs are career professionals — not freelancers with 50 other clients. They work exclusively for you, on your schedule, using your tools.</p>
               <ul className="space-y-3">
@@ -157,7 +157,7 @@ export default function VirtualAssistantsPage() {
 
       <section className="py-section bg-[#080c14]">
         <div className="max-w-[800px] mx-auto px-5">
-          <Reveal><Label>// FAQ</Label><Heading className="mb-10">Virtual Assistant FAQ</Heading></Reveal>
+          <Reveal><Label> FAQ</Label><Heading className="mb-10">Virtual Assistant FAQ</Heading></Reveal>
           <Reveal delay={100}><FAQAccordion faqs={VA_FAQS} /></Reveal>
         </div>
       </section>

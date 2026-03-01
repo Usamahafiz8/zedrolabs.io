@@ -27,7 +27,7 @@ export default function PortfolioPage() {
       <section className="py-section bg-[#0d1220]">
         <div className="section-wrap">
           <div className="flex items-end justify-between flex-wrap gap-5 mb-10">
-            <Reveal><Label>// Selected Work</Label><Heading>Recent <span className="text-gradient">Projects</span></Heading></Reveal>
+            <Reveal><Label> Selected Work</Label><Heading>Recent <span className="text-gradient">Projects</span></Heading></Reveal>
             <div className="flex gap-2 flex-wrap">
               {FILTERS.map(f => (
                 <button key={f} onClick={() => setFilter(f)}

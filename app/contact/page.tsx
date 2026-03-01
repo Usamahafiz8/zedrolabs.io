@@ -57,7 +57,7 @@ export default function ContactPage() {
             {/* Info */}
             <div>
               <Reveal>
-                <Label>// Get in Touch</Label>
+                <Label> Get in Touch</Label>
                 <Heading className="mb-5">We&apos;d Love<br />to Hear<br />From You</Heading>
                 <p className="text-[#a8b8d8] mb-8 leading-relaxed">
                   Whether you have a full brief or just an idea — reach out. Our team responds within

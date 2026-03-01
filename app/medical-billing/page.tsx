@@ -77,7 +77,7 @@ export default function MedicalBillingPage() {
       <section className="py-section bg-[#0d1220]">
         <div className="section-wrap">
           <Reveal>
-            <Label>// RCM Services</Label>
+            <Label> RCM Services</Label>
             <Heading className="mb-12">Complete Revenue Cycle<br /><span className="text-gradient">Management</span></Heading>
           </Reveal>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -98,7 +98,7 @@ export default function MedicalBillingPage() {
       <section className="py-20 bg-[#080c14]">
         <div className="section-wrap">
           <Reveal>
-            <Label>// Specialties We Cover</Label>
+            <Label> Specialties We Cover</Label>
             <Heading className="mb-10">All Medical <span className="text-gradient">Specialties</span></Heading>
           </Reveal>
           <Reveal delay={100}>
@@ -116,7 +116,7 @@ export default function MedicalBillingPage() {
       {/* Process */}
       <section className="py-section bg-[#0d1220]">
         <div className="section-wrap">
-          <Reveal><Label>// Our Process</Label><Heading className="mb-12">RCM Workflow</Heading></Reveal>
+          <Reveal><Label> Our Process</Label><Heading className="mb-12">RCM Workflow</Heading></Reveal>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
             {[
               { n:"01", title:"Patient Registration",    desc:"Demographics, insurance, eligibility verification" },
@@ -140,7 +140,7 @@ export default function MedicalBillingPage() {
       {/* FAQ */}
       <section className="py-section bg-[#080c14]">
         <div className="max-w-[800px] mx-auto px-5">
-          <Reveal><Label>// FAQ</Label><Heading className="mb-10">Medical Billing Questions</Heading></Reveal>
+          <Reveal><Label> FAQ</Label><Heading className="mb-10">Medical Billing Questions</Heading></Reveal>
           <Reveal delay={100}><FAQAccordion faqs={MED_FAQS} /></Reveal>
         </div>
       </section>

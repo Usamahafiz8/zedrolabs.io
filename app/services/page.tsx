@@ -52,7 +52,7 @@ export default function ServicesPage() {
       {/* All Services */}
       <section className="py-section bg-[#0d1220]">
         <div className="section-wrap">
-          <Reveal><Label>// All Services</Label><Heading className="mb-14">What We Do</Heading></Reveal>
+          <Reveal><Label> All Services</Label><Heading className="mb-14">What We Do</Heading></Reveal>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {CORE_SERVICES.map((svc, i) => (
               <Reveal key={svc.slug} delay={(i % 4) * 70}>
@@ -78,7 +78,7 @@ export default function ServicesPage() {
       {/* Process */}
       <section className="py-section bg-[#080c14]">
         <div className="section-wrap">
-          <Reveal><Label>// How We Work</Label><Heading className="mb-12">Our Delivery <span className="text-gradient">Process</span></Heading></Reveal>
+          <Reveal><Label> How We Work</Label><Heading className="mb-12">Our Delivery <span className="text-gradient">Process</span></Heading></Reveal>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {PROCESS.map((p, i) => (
               <Reveal key={p.n} delay={i * 70}>
@@ -96,7 +96,7 @@ export default function ServicesPage() {
       {/* Tech stack */}
       <section className="py-section bg-[#0d1220]">
         <div className="section-wrap">
-          <Reveal><Label>// Tech Stack</Label><Heading className="mb-12">Technologies We <span className="text-gradient">Master</span></Heading></Reveal>
+          <Reveal><Label> Tech Stack</Label><Heading className="mb-12">Technologies We <span className="text-gradient">Master</span></Heading></Reveal>
           <div className="space-y-6">
             {Object.entries(TECH_STACK).map(([category, techs]) => (
               <Reveal key={category}>
@@ -118,7 +118,7 @@ export default function ServicesPage() {
 
       <section className="py-section bg-[#080c14]">
         <div className="max-w-[800px] mx-auto px-5">
-          <Reveal><Label>// FAQ</Label><Heading className="mb-10">Common Questions</Heading></Reveal>
+          <Reveal><Label> FAQ</Label><Heading className="mb-10">Common Questions</Heading></Reveal>
           <Reveal delay={100}><FAQAccordion faqs={FAQS} /></Reveal>
         </div>
       </section>
