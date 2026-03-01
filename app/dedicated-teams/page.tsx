@@ -45,7 +45,7 @@ export default function DedicatedTeamsPage() {
 
       <section className="py-section bg-[#0d1220]">
         <div className="section-wrap">
-          <Reveal><Label className="justify-center">// Pricing Tiers</Label><Heading className="text-center mb-14">Choose Your <span className="text-gradient">Tier</span></Heading></Reveal>
+          <Reveal><Label className="justify-center"> Pricing Tiers</Label><Heading className="text-center mb-14">Choose Your <span className="text-gradient">Tier</span></Heading></Reveal>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-[1000px] mx-auto">
             {DEV_PRICING.map((tier, i) => (
               <Reveal key={tier.name} delay={i * 100}>
@@ -77,7 +77,7 @@ export default function DedicatedTeamsPage() {
 
       <section className="py-section bg-[#080c14]">
         <div className="section-wrap">
-          <Reveal><Label>// How It Works</Label><Heading className="mb-12">Onboard in <span className="text-gradient">Days</span></Heading></Reveal>
+          <Reveal><Label> How It Works</Label><Heading className="mb-12">Onboard in <span className="text-gradient">Days</span></Heading></Reveal>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
               { n:"01", t:"Share Needs", d:"Skills, seniority, tools. We send profiles within 48 hours." },
@@ -99,7 +99,7 @@ export default function DedicatedTeamsPage() {
 
       <section className="py-section bg-[#0d1220]">
         <div className="max-w-[800px] mx-auto px-5">
-          <Reveal><Label>// FAQ</Label><Heading className="mb-10">Team Questions</Heading></Reveal>
+          <Reveal><Label> FAQ</Label><Heading className="mb-10">Team Questions</Heading></Reveal>
           <Reveal delay={100}><FAQAccordion faqs={FAQS} /></Reveal>
         </div>
       </section>

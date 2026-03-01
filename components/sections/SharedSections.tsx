@@ -9,7 +9,7 @@ export function PortfolioPreview() {
       <div className="section-wrap">
         <div className="flex items-end justify-between flex-wrap gap-5 mb-14">
           <Reveal>
-            <Label>// Recent Work</Label>
+            <Label> Recent Work</Label>
             <Heading>Work That <span className="text-gradient">Speaks</span></Heading>
           </Reveal>
           <Reveal delay={100} dir="right">
@@ -65,7 +65,7 @@ export function TestimonialsSection() {
       <div className="section-wrap relative z-10">
         <div className="text-center mb-14">
           <Reveal>
-            <Label className="justify-center">// Client Love</Label>
+            <Label className="justify-center"> Client Love</Label>
             <Heading>What Our <span className="text-gradient">Clients Say</span></Heading>
           </Reveal>
         </div>
@@ -116,7 +116,7 @@ export function CTASection() {
         <Reveal>
           <div className="inline-flex items-center gap-2 border border-[rgba(193,39,45,0.3)] rounded-full px-4 py-1.5 text-[11px] font-bold text-[#e63939] mb-7"
             style={{ fontFamily:"var(--font-mono)", background:"rgba(193,39,45,0.06)" }}>
-            // Free consultation · 24hr response · No commitment
+            Free consultation · 24hr response · No commitment
           </div>
 
           <h2 className="t-h1 text-[#f0f4ff] mb-5">

@@ -27,7 +27,7 @@ export default function Web3Highlight() {
 
           {/* Left */}
           <Reveal dir="left">
-            <Label>// Web3 & Blockchain</Label>
+            <Label> Web3 & Blockchain</Label>
             <Heading className="mb-5">
               Build the<br />
               <span style={{ color:"#00d4ff" }}>Decentralized</span><br />

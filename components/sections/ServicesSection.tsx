@@ -13,7 +13,7 @@ export default function ServicesSection() {
         {/* Header */}
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-16">
           <Reveal>
-            <Label>// What We Build</Label>
+            <Label> What We Build</Label>
             <Heading>Services That<br /><span className="text-gradient">Drive Results</span></Heading>
           </Reveal>
           <Reveal delay={100} dir="right">
