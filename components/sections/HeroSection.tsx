@@ -76,7 +76,7 @@ export default function HeroSection() {
 
             {/* Sub */}
             <p className="text-[clamp(1rem,1.6vw,1.15rem)] text-[#a8b8d8] max-w-[560px] mb-6 leading-relaxed"
-              style={{ animation:"slideUp 0.7s 0.2s ease both", opacity:0, animationFillMode:"forwards" }}>
+              style={{ animation:"slideUp 0.7s 0.2s ease both",  animationFillMode:"forwards" }}>
               Custom software · AI & ML · Web3 & Blockchain · Medical Billing & RCM ·
               Virtual Assistants · Dedicated Teams from{" "}
               <strong className="text-[#f0f4ff]">$800/mo</strong>
@@ -84,7 +84,7 @@ export default function HeroSection() {
 
             {/* Service badges */}
             <div className="flex flex-wrap gap-2.5 mb-10"
-              style={{ animation:"slideUp 0.7s 0.3s ease both", opacity:0, animationFillMode:"forwards" }}>
+              style={{ animation:"slideUp 0.7s 0.3s ease both",  animationFillMode:"forwards" }}>
               {BADGES.map((b) => (
                 <span key={b.label}
                   className="px-3 py-1.5 rounded-lg text-[11px] font-bold tracking-wider uppercase"
@@ -96,7 +96,7 @@ export default function HeroSection() {
 
             {/* CTAs */}
             <div className="flex items-center gap-4 flex-wrap mb-12"
-              style={{ animation:"slideUp 0.7s 0.4s ease both", opacity:0, animationFillMode:"forwards" }}>
+              style={{ animation:"slideUp 0.7s 0.4s ease both",  animationFillMode:"forwards" }}>
               <Link href="/contact" className="btn-primary text-base py-4 px-8">
                 <span className="relative z-10 flex items-center gap-2">
                   Get Your Free Quote <ArrowRight size={16} />
@@ -109,7 +109,7 @@ export default function HeroSection() {
 
             {/* Trust signals */}
             <div className="flex items-center gap-6 flex-wrap"
-              style={{ animation:"slideUp 0.7s 0.45s ease both", opacity:0, animationFillMode:"forwards" }}>
+              style={{ animation:"slideUp 0.7s 0.45s ease both",  animationFillMode:"forwards" }}>
               {TRUST.map((t) => (
                 <div key={t.label} className="flex items-center gap-2 text-[12px] text-[#5a7090]">
                   <span className="text-[#c1272d]">{t.icon}</span>
@@ -127,7 +127,7 @@ export default function HeroSection() {
 
             {/* Stats */}
             <div className="grid grid-cols-3 sm:grid-cols-6 gap-5 mt-16 pt-12 border-t border-[#1a2540]"
-              style={{ animation:"slideUp 0.7s 0.5s ease both", opacity:0, animationFillMode:"forwards" }}>
+              style={{ animation:"slideUp 0.7s 0.5s ease both",  animationFillMode:"forwards" }}>
               {STATS.map((s) => (
                 <div key={s.label} className="flex flex-col gap-1 stat-line">
                   <div className="text-[2rem] font-black text-[#f0f4ff] leading-none" style={{ fontFamily:"var(--font-display)" }}>
