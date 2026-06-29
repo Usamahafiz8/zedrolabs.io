@@ -35,22 +35,9 @@ export default function Footer() {
                 Zedro<span className="text-[#e63939]">Labs</span>
               </span>
             </Link>
-            <p className="text-sm text-[#5a7090] leading-relaxed max-w-[280px] mb-6">
-              Software development, Web3, medical billing & virtual assistant services from Rawalpindi, Pakistan — trusted by 150+ clients worldwide.
+            <p className="text-sm text-[#5a7090] leading-relaxed max-w-[280px]">
+              Software development, Web3, medical billing & virtual assistant services — trusted by 150+ clients worldwide.
             </p>
-            {/* Socials */}
-            <div className="flex gap-2.5">
-              {[
-                { label:"LinkedIn", href:COMPANY.linkedin, icon:"in" },
-                { label:"Twitter",  href:COMPANY.twitter,  icon:"𝕏"  },
-                { label:"GitHub",   href:COMPANY.github,   icon:"⌥"  },
-              ].map((s) => (
-                <a key={s.label} href={s.href} aria-label={s.label} target="_blank" rel="noopener noreferrer"
-                  className="w-9 h-9 rounded-xl bg-[#0d1220] border border-[#1a2540] flex items-center justify-center text-sm text-[#5a7090] hover:bg-[#c1272d] hover:border-[#c1272d] hover:text-white transition-all duration-200">
-                  {s.icon}
-                </a>
-              ))}
-            </div>
           </div>
 
           {/* Services */}
@@ -84,10 +71,8 @@ export default function Footer() {
           <div>
             <h5 className="text-xs font-bold tracking-[0.12em] uppercase text-[#f0f4ff] mb-5" style={{ fontFamily:"var(--font-mono)" }}>Contact</h5>
             <ul className="space-y-3 text-sm text-[#5a7090]">
-              <li className="flex gap-2">📍 <span>{COMPANY.location}</span></li>
               <li><a href={`mailto:${COMPANY.email}`} className="hover:text-[#e63939] transition-colors">{COMPANY.email}</a></li>
               <li><a href={`tel:${COMPANY.phone}`} className="hover:text-[#e63939] transition-colors">{COMPANY.phone}</a></li>
-              <li className="flex gap-2">🕐 <span>Mon–Fri 9AM–6PM PKT</span></li>
             </ul>
             <div className="mt-5 px-3 py-2 bg-[rgba(0,255,136,0.06)] border border-[rgba(0,255,136,0.15)] rounded-lg flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-[#00ff88] animate-pulse flex-shrink-0" />

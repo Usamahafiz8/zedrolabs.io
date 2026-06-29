@@ -2,16 +2,11 @@ export const COMPANY = {
   name:      "ZedroLabs",
   domain:    "zedrolabs.io",
   tagline:   "Software Development · AI · Web3 · Medical Billing · Virtual Assistants",
-  location:  "Rawalpindi, Punjab, Pakistan",
   email:     "hello@zedrolabs.io",
   sales:     "sales@zedrolabs.io",
-  phone:     "+92 51 XXX XXXX",
-  whatsapp:  "+92 300 XXX XXXX",
+  phone:     "+92 3371562222",
+  whatsapp:  "+92 3371562222",
   founded:   "2016",
-  timezone:  "PKT (UTC+5)",
-  linkedin:  "https://linkedin.com/company/zedrolabs",
-  twitter:   "https://twitter.com/zedrolabs",
-  github:    "https://github.com/zedrolabs",
 };
 
 export const STATS = [

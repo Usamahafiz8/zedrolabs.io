@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { COMPANY } from "@/lib/data";
 import { Label, Heading, Reveal, RedLine } from "@/components/ui";
-import { Check, Mail, Phone, MapPin, Clock } from "lucide-react";
+import { Check, Mail, Phone } from "lucide-react";
 import toast from "react-hot-toast";
 
 interface FormData {
@@ -80,10 +80,8 @@ export default function ContactPage() {
               <Reveal delay={100}>
                 <div className="space-y-4 mb-8">
                   {[
-                    { icon:<MapPin size={15}/>, l:"Location", v:COMPANY.location },
                     { icon:<Mail  size={15}/>, l:"Email",    v:COMPANY.email,  href:`mailto:${COMPANY.email}` },
                     { icon:<Phone size={15}/>, l:"Phone / WhatsApp", v:COMPANY.phone, href:`tel:${COMPANY.phone}` },
-                    { icon:<Clock size={15}/>, l:"Hours",    v:`Mon–Fri 9AM–6PM ${COMPANY.timezone}` },
                   ].map((item) => (
                     <div key={item.l} className="flex items-start gap-3.5">
                       <div className="w-10 h-10 rounded-xl bg-[rgba(193,39,45,0.1)] border border-[rgba(193,39,45,0.2)] flex items-center justify-center flex-shrink-0 mt-0.5 text-[#e63939]">
