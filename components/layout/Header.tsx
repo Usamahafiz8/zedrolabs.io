@@ -20,6 +20,7 @@ const NAV = [
     ],
   },
   { label: "Portfolio", href: "/portfolio" },
+  { label: "Pricing",   href: "/pricing" },
   { label: "Contact",   href: "/contact" },
 ];
 

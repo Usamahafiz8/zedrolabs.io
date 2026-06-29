@@ -322,6 +322,10 @@ a:hover ~ #cursor, button:hover ~ #cursor { width: 20px; height: 20px; }
   66%     { transform: translateY(12px) scale(0.97); }
 }
 
+/* ── Scrollbar hide ── */
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
 /* ── Responsive ── */
 @media (max-width: 768px) {
   * { cursor: auto !important; }
