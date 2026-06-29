@@ -101,9 +101,9 @@ export default function Header() {
 
           {/* CTAs */}
           <div className="hidden lg:flex items-center gap-3">
-            <a href="mailto:hello@zedrolabs.io" className="btn-ghost text-[13px] py-2.5 px-5">
-              hello@zedrolabs.io
-            </a>
+            <Link href="/book" className="btn-ghost text-[13px] py-2.5 px-5">
+              📅 Book a Call
+            </Link>
             <Link href="/contact" className="btn-primary text-[13px] py-2.5 px-5">
               <span>Get Free Quote</span>
             </Link>
@@ -139,7 +139,10 @@ export default function Header() {
                 </Link>
               )
             ))}
-            <div className="pt-4">
+            <div className="pt-4 flex flex-col gap-2">
+              <Link href="/book" className="btn-ghost w-full justify-center text-sm">
+                📅 Book a Discovery Call
+              </Link>
               <Link href="/contact" className="btn-primary w-full justify-center">
                 <span>Get Free Quote →</span>
               </Link>

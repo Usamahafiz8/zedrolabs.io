@@ -74,7 +74,7 @@ export default function Footer() {
           <div>
             <h5 className="text-xs font-bold tracking-[0.12em] uppercase text-[#f0f4ff] mb-5" style={{ fontFamily:"var(--font-mono)" }}>Company</h5>
             <ul className="space-y-2.5 text-sm text-[#5a7090]">
-              {[["About", "/about"],["Portfolio","/portfolio"],["Pricing","/pricing"],["Contact","/contact"],["Careers","/contact"],["Blog","#"],["Privacy","#"]].map(([l,h]) => (
+              {[["About", "/about"],["Portfolio","/portfolio"],["Pricing","/pricing"],["Book a Call","/book"],["Contact","/contact"],["Careers","/contact"],["Privacy","#"]].map(([l,h]) => (
                 <li key={l}><Link href={h} className="hover:text-[#e63939] transition-colors">{l}</Link></li>
               ))}
             </ul>
