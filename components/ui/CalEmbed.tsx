@@ -14,10 +14,10 @@ export default function CalEmbed() {
     <button
       data-cal-namespace="30min"
       data-cal-link="muhammad-osama/30min"
-      data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'
-      className="btn-primary w-full justify-center py-5 text-base"
+      data-cal-config='{"layout":"month_view"}'
+      className="btn-primary py-4 px-8 text-base"
     >
-      <span>📅 Pick a Time — Book Your Free 30-min Call</span>
+      <span>📅 Book a Free 30-min Call</span>
     </button>
   );
 }
