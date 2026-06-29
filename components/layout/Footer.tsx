@@ -102,9 +102,9 @@ export default function Footer() {
             © {year} <span className="text-[#e63939]">ZedroLabs</span>. All rights reserved. Built with ❤️ in Rawalpindi, Pakistan.
           </p>
           <div className="flex gap-5 text-xs text-[#5a7090]">
-            {["Privacy Policy","Terms of Service","NDA Template","Sitemap"].map((t) => (
-              <a key={t} href="#" className="hover:text-[#a8b8d8] transition-colors">{t}</a>
-            ))}
+            <a href="/contact" className="hover:text-[#a8b8d8] transition-colors">Privacy Policy</a>
+            <a href="/contact" className="hover:text-[#a8b8d8] transition-colors">Terms of Service</a>
+            <a href="/contact" className="hover:text-[#a8b8d8] transition-colors">Request NDA</a>
           </div>
         </div>
       </div>

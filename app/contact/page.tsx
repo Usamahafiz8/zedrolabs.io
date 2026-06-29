@@ -24,9 +24,21 @@ export default function ContactPage() {
     if (!form.name || !form.email || !form.message) { toast.error("Please fill required fields."); return; }
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) { toast.error("Enter a valid email."); return; }
     setLoading(true);
-    await new Promise(r => setTimeout(r, 1600));
-    setLoading(false); setDone(true);
-    toast.success("Message sent! We'll respond within 24 hours. ✓");
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Failed to send.");
+      setDone(true);
+      toast.success("Message sent! We'll respond within 24 hours. ✓");
+    } catch (err: any) {
+      toast.error(err.message || "Something went wrong. Please try again.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   const F = "form-field";
