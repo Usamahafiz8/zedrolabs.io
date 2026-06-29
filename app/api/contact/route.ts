@@ -1,7 +1,15 @@
 import { NextRequest, NextResponse } from "next/server";
-import { Resend } from "resend";
+import nodemailer from "nodemailer";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const transporter = nodemailer.createTransport({
+  host: "smtp.hostinger.com",
+  port: 587,
+  secure: false,
+  auth: {
+    user: process.env.SMTP_USER,
+    pass: process.env.SMTP_PASS,
+  },
+});
 
 export async function POST(req: NextRequest) {
   try {
@@ -15,11 +23,9 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Invalid email." }, { status: 400 });
     }
 
-    const to = process.env.CONTACT_EMAIL || "hello@zedrolabs.io";
-
-    await resend.emails.send({
-      from: "ZedroLabs Contact <onboarding@resend.dev>",
-      to,
+    await transporter.sendMail({
+      from: `"ZedroLabs" <${process.env.SMTP_USER}>`,
+      to: process.env.SMTP_USER,
       replyTo: email,
       subject: `New enquiry from ${name}${company ? ` · ${company}` : ""}`,
       html: `
@@ -45,7 +51,7 @@ export async function POST(req: NextRequest) {
 
     return NextResponse.json({ success: true });
   } catch (e: any) {
-    console.error("[ZedroLabs Contact Error]", e);
+    console.error("[ZedroLabs Contact Error]", e.message);
     return NextResponse.json({ error: "Failed to send. Please try again." }, { status: 500 });
   }
 }
