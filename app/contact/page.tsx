@@ -153,11 +153,10 @@ export default function ContactPage() {
                       <div><label htmlFor="service" className={L}>Service</label>
                         <select id="service" name="service" className={F} value={form.service} onChange={onChange}>
                           <option value="">Select service...</option>
-                          <option>Custom Software</option><option>AI & Machine Learning</option>
-                          <option>Web3 & Blockchain</option><option>Medical Billing & RCM</option>
+                          <option>Custom Software</option>
+                          <option>Web3 & Blockchain</option>
                           <option>Virtual Assistant</option><option>Dedicated Dev Team</option>
-                          <option>Mobile Apps</option><option>Cloud & DevOps</option>
-                          <option>UI/UX Design</option><option>Other</option>
+                          <option>Other</option>
                         </select></div>
                     </div>
                     <div className="mb-4"><label htmlFor="budget" className={L}>Budget Range</label>

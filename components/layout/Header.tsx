@@ -11,12 +11,10 @@ const NAV = [
   {
     label: "Services", href: "/services",
     children: [
-      { label: "Custom Software & AI",    href: "/services",            icon: "💻" },
+      { label: "Custom Software",          href: "/services",            icon: "💻" },
       { label: "Web3 & Blockchain",        href: "/web3",               icon: "⛓️" },
-      { label: "Medical Billing & RCM",    href: "/medical-billing",    icon: "🏥" },
       { label: "Virtual Assistants",       href: "/virtual-assistants", icon: "🤝" },
       { label: "Dedicated Dev Teams",      href: "/dedicated-teams",    icon: "👥" },
-      { label: "Cloud & DevOps",           href: "/services#cloud",     icon: "☁️" },
     ],
   },
   { label: "Portfolio", href: "/portfolio" },
@@ -70,7 +68,7 @@ export default function Header() {
                 {item.children ? (
                   <div onMouseEnter={() => setDropdown(true)} onMouseLeave={() => setDropdown(false)}>
                     <button
-                      className={cn("nav-link flex items-center gap-1", pathname.startsWith("/services") || pathname === "/web3" || pathname === "/medical-billing" || pathname === "/virtual-assistants" || pathname === "/dedicated-teams" ? "active" : "")}
+                      className={cn("nav-link flex items-center gap-1", pathname.startsWith("/services") || pathname === "/web3" || pathname === "/virtual-assistants" || pathname === "/dedicated-teams" ? "active" : "")}
                     >
                       {item.label} <ChevronDown size={13} className={cn("transition-transform", dropdown ? "rotate-180" : "")} />
                     </button>

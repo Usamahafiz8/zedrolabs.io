@@ -1,7 +1,7 @@
 export const COMPANY = {
   name:      "ZedroLabs",
   domain:    "zedrolabs.io",
-  tagline:   "Software Development · AI · Web3 · Medical Billing · Virtual Assistants",
+  tagline:   "Software Development · Web3 · Virtual Assistants",
   email:     "hello@zedrolabs.io",
   sales:     "sales@zedrolabs.io",
   phone:     "+92 3371562222",
@@ -19,11 +19,8 @@ export const STATS = [
 ];
 
 export const MARQUEE_ITEMS = [
-  "Custom Software", "AI & ML", "Web3 & Blockchain",
-  "Medical Billing & RCM", "Virtual Assistants",
-  "Cloud & DevOps", "Mobile Apps", "Cybersecurity",
-  "IoT Solutions", "Data Analytics", "UI/UX Design",
-  "Staff Augmentation",
+  "Custom Software", "Web3 & Blockchain",
+  "Virtual Assistants", "Staff Augmentation",
 ];
 
 export const CORE_SERVICES = [
@@ -38,16 +35,6 @@ export const CORE_SERVICES = [
     featured: false,
   },
   {
-    icon: "🤖",
-    title: "AI & Machine Learning",
-    short: "Intelligent Systems",
-    desc: "LLM integrations, NLP, computer vision, predictive analytics, and AI-powered automation at enterprise scale.",
-    markets: ["B2B", "B2G"],
-    slug: "ai-ml",
-    color: "from-cyan-900/25 to-transparent",
-    featured: false,
-  },
-  {
     icon: "⛓️",
     title: "Web3 & Blockchain",
     short: "DeFi · NFT · Smart Contracts",
@@ -59,17 +46,6 @@ export const CORE_SERVICES = [
     highlight: "🔥 High Demand",
   },
   {
-    icon: "🏥",
-    title: "Medical Billing & RCM",
-    short: "Revenue Cycle Management",
-    desc: "End-to-end medical billing, RCM, claims processing, denial management, and HIPAA-compliant software.",
-    markets: ["B2B", "B2G"],
-    slug: "medical-billing",
-    color: "from-emerald-900/25 to-transparent",
-    featured: true,
-    highlight: "⚕️ Healthcare Specialist",
-  },
-  {
     icon: "🤝",
     title: "Virtual Assistants",
     short: "Remote Professional Support",
@@ -79,26 +55,6 @@ export const CORE_SERVICES = [
     color: "from-amber-900/25 to-transparent",
     featured: true,
     highlight: "From $400/mo",
-  },
-  {
-    icon: "☁️",
-    title: "Cloud & DevOps",
-    short: "AWS · Azure · GCP",
-    desc: "Cloud architecture, Kubernetes, CI/CD pipelines, IaC, and cost-optimized multi-cloud infrastructure.",
-    markets: ["B2B", "B2G"],
-    slug: "cloud-devops",
-    color: "from-blue-900/25 to-transparent",
-    featured: false,
-  },
-  {
-    icon: "📱",
-    title: "Mobile Apps",
-    short: "iOS & Android",
-    desc: "Native and cross-platform apps with polished UX, offline-first architecture, and App Store optimization.",
-    markets: ["B2C", "B2B"],
-    slug: "mobile-apps",
-    color: "from-pink-900/25 to-transparent",
-    featured: false,
   },
   {
     icon: "👥",
@@ -328,10 +284,6 @@ export const FAQS = [
   {
     q: "How quickly can you start a project?",
     a: "For dedicated teams and VAs, we can onboard resources within 3–7 business days. For custom projects, we begin with a discovery workshop and can start development within 1–2 weeks of kickoff.",
-  },
-  {
-    q: "Do you have HIPAA expertise for medical billing?",
-    a: "Yes. Our medical billing team is HIPAA-certified and we sign Business Associate Agreements (BAA) with all healthcare clients. All data is encrypted in transit and at rest.",
   },
   {
     q: "Are your smart contracts audited?",

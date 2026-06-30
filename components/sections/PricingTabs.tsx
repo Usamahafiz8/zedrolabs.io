@@ -29,9 +29,6 @@ const TABS = [
   { id: "dev",      label: "Dev Teams",            icon: "👥", badge: "From $800/mo"  },
   { id: "software", label: "Custom Software",      icon: "💻", badge: "From $5K"      },
   { id: "web3",     label: "Web3 & Blockchain",    icon: "⛓️", badge: "From $3K"      },
-  { id: "medical",  label: "Medical Billing",      icon: "🏥", badge: "4–7% of collections" },
-  { id: "mobile",   label: "Mobile Apps",          icon: "📱", badge: "From $8K"      },
-  { id: "cloud",    label: "Cloud & DevOps",       icon: "☁️", badge: "From $800/mo"  },
 ];
 
 /* ── Pricing data ── */

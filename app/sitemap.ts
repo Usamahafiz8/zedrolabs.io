@@ -9,7 +9,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/about",              priority: 0.8,  changeFrequency: "monthly" },
     { url: "/services",           priority: 0.9,  changeFrequency: "weekly"  },
     { url: "/web3",               priority: 0.9,  changeFrequency: "weekly"  },
-    { url: "/medical-billing",    priority: 0.9,  changeFrequency: "weekly"  },
     { url: "/virtual-assistants", priority: 0.9,  changeFrequency: "weekly"  },
     { url: "/dedicated-teams",    priority: 0.85, changeFrequency: "monthly" },
     { url: "/portfolio",          priority: 0.75, changeFrequency: "monthly" },

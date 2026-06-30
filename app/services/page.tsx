@@ -6,9 +6,9 @@ import { CTASection } from "@/components/sections/SharedSections";
 import { ArrowUpRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Software Development Services — Custom, AI, Web3, Mobile, Cloud",
-  description: "Complete IT services: custom software, AI/ML, Web3/blockchain, medical billing, virtual assistants, cloud & DevOps, mobile apps, cybersecurity, and data analytics.",
-  keywords: ["software development services", "IT services Pakistan", "custom software development", "AI development services", "cloud DevOps services", "mobile app development"],
+  title: "Software Development Services — Custom Software, Web3, Virtual Assistants",
+  description: "Complete IT services: custom software, Web3/blockchain, virtual assistants, and dedicated dev teams.",
+  keywords: ["software development services", "IT services Pakistan", "custom software development", "web3 blockchain development", "virtual assistant services"],
 };
 
 const PROCESS = [
@@ -37,7 +37,7 @@ export default function ServicesPage() {
               <span className="text-gradient">Build & Scale</span>
             </h1>
             <p className="text-[#a8b8d8] text-lg max-w-[520px] mb-8">
-              From MVP to enterprise, DeFi protocols to healthcare systems — ZedroLabs covers every technology
+              From MVP to enterprise, DeFi protocols to dedicated teams — ZedroLabs covers every technology
               vertical with expert teams and modern tooling.
             </p>
             <div className="flex flex-wrap gap-2">

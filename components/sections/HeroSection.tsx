@@ -5,10 +5,10 @@ import { ParticleField, Counter, Reveal } from "@/components/ui";
 import { ArrowRight, Zap, Shield, Globe } from "lucide-react";
 
 const BADGES = [
+  { label: "Custom Software",   color: "rgba(193,39,45,0.1)", border: "rgba(193,39,45,0.3)", text: "#ff4d4d" },
   { label: "Web3 & Blockchain", color: "rgba(0,212,255,0.1)", border: "rgba(0,212,255,0.25)", text: "#00d4ff" },
-  { label: "Medical Billing", color: "rgba(0,255,136,0.06)", border: "rgba(0,255,136,0.2)",  text: "#00ff88" },
   { label: "Virtual Assistants",color: "rgba(245,166,35,0.08)",border:"rgba(245,166,35,0.2)", text: "#f5a623" },
-  { label: "AI & Automation",   color: "rgba(193,39,45,0.1)", border: "rgba(193,39,45,0.3)", text: "#ff4d4d" },
+  { label: "Dedicated Teams",   color: "rgba(0,255,136,0.06)", border: "rgba(0,255,136,0.2)",  text: "#00ff88" },
 ];
 
 const TRUST = [
@@ -77,7 +77,7 @@ export default function HeroSection() {
             {/* Sub */}
             <p className="text-[clamp(1rem,1.6vw,1.15rem)] text-[#a8b8d8] max-w-[560px] mb-6 leading-relaxed"
               style={{ animation:"slideUp 0.7s 0.2s ease both",  animationFillMode:"forwards" }}>
-              Custom software · AI & ML · Web3 & Blockchain · Medical Billing & RCM ·
+              Custom software · Web3 & Blockchain ·
               Virtual Assistants · Dedicated Teams from{" "}
               <strong className="text-[#f0f4ff]">$800/mo</strong>
             </p>

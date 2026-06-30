@@ -36,7 +36,7 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-sm text-[#5a7090] leading-relaxed max-w-[280px]">
-              Software development, Web3, medical billing & virtual assistant services — trusted by 150+ clients worldwide.
+              Software development, Web3 & virtual assistant services — trusted by 150+ clients worldwide.
             </p>
           </div>
 
@@ -45,12 +45,10 @@ export default function Footer() {
             <h5 className="text-xs font-bold tracking-[0.12em] uppercase text-[#f0f4ff] mb-5" style={{ fontFamily:"var(--font-mono)" }}>Services</h5>
             <ul className="space-y-2.5 text-sm text-[#5a7090]">
               {[
-                ["Custom Software & AI", "/services"],
+                ["Custom Software",       "/services"],
                 ["Web3 & Blockchain",     "/web3"],
-                ["Medical Billing & RCM", "/medical-billing"],
                 ["Virtual Assistants",    "/virtual-assistants"],
                 ["Dedicated Dev Teams",   "/dedicated-teams"],
-                ["Cloud & DevOps",        "/services"],
               ].map(([l, h]) => (
                 <li key={l}><Link href={h} className="hover:text-[#e63939] transition-colors">{l}</Link></li>
               ))}
