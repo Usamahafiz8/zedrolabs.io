@@ -92,10 +92,9 @@ const jsonLd = {
         addressCountry: "PK",
       },
       contactPoint: [
-        { "@type": "ContactPoint", telephone: "+92-51-XXX-XXXX", contactType: "sales", availableLanguage: "English" },
-        { "@type": "ContactPoint", email: "hello@zedrolabs.io", contactType: "customer service" },
+        { "@type": "ContactPoint", telephone: COMPANY.phone, contactType: "sales", availableLanguage: "English" },
+        { "@type": "ContactPoint", email: COMPANY.email, contactType: "customer service" },
       ],
-      sameAs: [COMPANY.linkedin, COMPANY.twitter, COMPANY.github],
       areaServed: "Worldwide",
       knowsAbout: ["Software Development", "Blockchain", "Medical Billing", "AI", "Virtual Assistants"],
     },

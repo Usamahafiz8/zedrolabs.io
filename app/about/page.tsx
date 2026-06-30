@@ -24,7 +24,7 @@ export default function AboutPage() {
         <div className="section-wrap relative z-10 py-24">
           <div className="inline-flex items-center gap-2 border border-[rgba(193,39,45,0.3)] rounded-full px-4 py-2 text-[11px] font-bold text-[#e63939] mb-8"
             style={{ fontFamily:"var(--font-mono)", background:"rgba(193,39,45,0.06)" }}>
-            Founded {COMPANY.founded} · {COMPANY.location}
+            Founded {COMPANY.founded}
           </div>
           <h1 className="t-hero text-[#f0f4ff] mb-5">
             Pakistan&apos;s Most<br />
