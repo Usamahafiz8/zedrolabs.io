@@ -41,7 +41,7 @@ export default function PortfolioPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {filtered.map((p, i) => (
-              <article key={p.title} className="card overflow-hidden group cursor-pointer">
+              <article key={p.title} className="card overflow-hidden group cursor-pointer transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_20px_50px_rgba(193,39,45,0.25)]">
                 <div className={`relative aspect-[16/9] bg-gradient-to-br ${p.gradient} flex items-center justify-center text-5xl overflow-hidden`}>
                   {p.emoji}
                   <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity">
@@ -50,6 +50,10 @@ export default function PortfolioPage() {
                   </div>
                   <div className="absolute inset-0 bg-gradient-to-t from-[#080c14]/90 to-transparent" />
                   <div className="absolute bottom-3 left-4 text-[10px] text-white/50" style={{ fontFamily:"var(--font-mono)" }}>{p.stats}</div>
+                  <div className="absolute inset-0 bg-[#080c14]/85 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-center p-6">
+  <p className="text-[13px] text-[#e8ecf5] leading-relaxed mb-4">{p.desc}</p>
+  <span className="text-[12px] font-bold text-[#e63939] tracking-wide">View Case Study →</span>
+</div>
                 </div>
                 <div className="p-6">
                   <div className="flex items-center gap-2 mb-3"><Badge market={p.market} /></div>
