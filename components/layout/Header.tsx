@@ -11,10 +11,10 @@ const NAV = [
   {
     label: "Services", href: "/services",
     children: [
-      { label: "Custom Software",          href: "/services",            icon: "💻" },
-      { label: "Web3 & Blockchain",        href: "/web3",               icon: "⛓️" },
-      { label: "Virtual Assistants",       href: "/virtual-assistants", icon: "🤝" },
-      { label: "Dedicated Dev Teams",      href: "/dedicated-teams",    icon: "👥" },
+      { label: "Custom Software",          href: "/services",            icon: "" },
+      { label: "Web3 & Blockchain",        href: "/web3",               icon: "" },
+      { label: "Virtual Assistants",       href: "/virtual-assistants", icon: "" },
+      { label: "Dedicated Dev Teams",      href: "/dedicated-teams",    icon: "" },
     ],
   },
   { label: "Portfolio", href: "/portfolio" },

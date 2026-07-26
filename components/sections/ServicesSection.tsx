@@ -46,16 +46,14 @@ export default function ServicesSection() {
 
                     <div className="relative z-10">
                       {/* Icon */}
-                      <div className="w-12 h-12 rounded-xl bg-[rgba(193,39,45,0.1)] border border-[rgba(193,39,45,0.2)] flex items-center justify-center text-xl mb-5 group-hover:scale-110 group-hover:shadow-[0_0_20px_rgba(193,39,45,0.4)] transition-all duration-300">
-                        {svc.icon}
-                      </div>
+                      <div className="w-12 h-12 rounded-xl bg-[rgba(193,39,45,0.1)] border border-[rgba(193,39,45,0.2)] flex items-center justify-center text-xl mb-5 group-hover:scale-110 group-hover:shadow-[0_0_20px_rgba(193,39,45,0.4)] transition-all duration-300" />
 
                       <h3 className="t-h3 text-[#f0f4ff] mb-2">{svc.title}</h3>
                       <p className="text-xs text-[#e63939] font-semibold tracking-wider uppercase mb-3" style={{ fontFamily:"var(--font-mono)" }}>{svc.short}</p>
                       <p className="text-[13px] text-[#a8b8d8] leading-relaxed flex-1">{svc.desc}</p>
 
                       {svc.highlight && !svc.featured && (
-                        <div className="mt-3 text-[12px] font-bold text-[#e63939]">⚡ {svc.highlight}</div>
+                        <div className="mt-3 text-[12px] font-bold text-[#e63939]">{svc.highlight}</div>
                       )}
 
                       <div className="flex flex-wrap gap-1.5 mt-4">
