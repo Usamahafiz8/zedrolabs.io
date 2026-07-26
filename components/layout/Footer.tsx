@@ -88,6 +88,7 @@ export default function Footer() {
             <a href="/contact" className="hover:text-[#a8b8d8] transition-colors">Privacy Policy</a>
             <a href="/contact" className="hover:text-[#a8b8d8] transition-colors">Terms of Service</a>
             <a href="/contact" className="hover:text-[#a8b8d8] transition-colors">Request NDA</a>
+            <a href="https://github.com/Usamahafiz8" target="_blank" rel="noopener noreferrer" className="hover:text-[#a8b8d8] transition-colors">GitHub</a>
           </div>
         </div>
       </div>

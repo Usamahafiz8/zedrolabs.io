@@ -56,7 +56,7 @@ const PRICING: Record<string, ServiceData> = {
         price: 800,
         period: "/month",
         priceNote: "40 hrs/week · 1 dedicated VA",
-        badge: "Most Popular",
+        
         featured: true,
         features: [
           "Any role / specialty",
