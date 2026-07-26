@@ -56,7 +56,7 @@ const PRICING: Record<string, ServiceData> = {
         price: 800,
         period: "/month",
         priceNote: "40 hrs/week · 1 dedicated VA",
-        
+ badge: "Most Popular",
         featured: true,
         features: [
           "Any role / specialty",
@@ -668,7 +668,7 @@ export default function PricingTabs() {
         </div>
 
         {/* Pricing cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-2">
           {service.tiers.map((tier) => (
             <PricingCard key={tier.name} tier={tier} />
           ))}
