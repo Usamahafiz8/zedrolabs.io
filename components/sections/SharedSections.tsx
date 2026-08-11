@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { PORTFOLIO_PROJECTS, TESTIMONIALS } from "@/lib/data";
+import { PORTFOLIO_PROJECTS, TESTIMONIALS, COMPANY } from "@/lib/data";
 import { Label, Heading, Badge, Reveal } from "@/components/ui";
 import { ArrowUpRight, Star } from "lucide-react";
 
@@ -22,7 +22,7 @@ export function PortfolioPreview() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {PORTFOLIO_PROJECTS.slice(0, 6).map((p, i) => (
             <Reveal key={p.title} delay={i * 80}>
-              <article className="card overflow-hidden group cursor-pointer" aria-label={p.title}>
+              <a href={p.link} target="_blank" rel="noopener noreferrer" className="card overflow-hidden group cursor-pointer block" aria-label={p.title}>
                 {/* Visual */}
                 <div className={`relative aspect-[16/9] bg-gradient-to-br ${p.gradient} flex items-center justify-center text-5xl overflow-hidden`}>
                   {p.emoji}
@@ -49,7 +49,7 @@ export function PortfolioPreview() {
                     ))}
                   </div>
                 </div>
-              </article>
+              </a>
             </Reveal>
           ))}
         </div>
@@ -133,7 +133,7 @@ export function CTASection() {
             <Link href="/contact" className="btn-primary text-base py-4 px-10">
               <span className="flex items-center gap-2">Get Your Free Quote <ArrowUpRight size={16} /></span>
             </Link>
-            <a href="https://wa.me/923000000000" target="_blank" rel="noopener noreferrer" className="btn-ghost text-base py-4 px-10">
+            <a href={`https://wa.me/${COMPANY.whatsapp.replace(/[^\d]/g, "")}`} target="_blank" rel="noopener noreferrer" className="btn-ghost text-base py-4 px-10">
               WhatsApp Us
             </a>
           </div>
