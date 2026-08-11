@@ -3,6 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { Check, MessageCircle, ArrowUpRight } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { Tilt } from "@/components/ui";
 
 /* ── Types ── */
 type Tier = {
@@ -541,8 +542,8 @@ function PricingCard({ tier }: { tier: Tier }) {
   const mainPrice = isFrom ? priceStr.replace("from ", "") : priceStr;
 
   return (
-    <div className={cn(
-      "relative flex flex-col rounded-2xl border transition-all duration-300 hover:-translate-y-1 p-7",
+    <Tilt max={6} className={cn(
+      "relative flex flex-col rounded-2xl border p-7",
       isCustom
         ? "bg-[rgba(255,255,255,0.01)] border-dashed border-[#1a2540] hover:border-[rgba(193,39,45,0.25)]"
         : isFeatured
@@ -612,7 +613,7 @@ function PricingCard({ tier }: { tier: Tier }) {
         <span>{tier.cta}</span>
         {!isFeatured && <ArrowUpRight size={13} />}
       </Link>
-    </div>
+    </Tilt>
   );
 }
 

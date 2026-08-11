@@ -3,7 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { PORTFOLIO_PROJECTS, CURRENT_PROJECTS } from "@/lib/data";
-import { Label, Heading, Badge, Reveal } from "@/components/ui";
+import { Label, Heading, Badge, Reveal, Tilt } from "@/components/ui";
 import { CTASection } from "@/components/sections/SharedSections";
 import { cn } from "@/lib/utils";
 import { Lock } from "lucide-react";
@@ -43,8 +43,9 @@ export default function PortfolioPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {filtered.map((p, i) => (
-              <a key={p.title} href={p.link} target="_blank" rel="noopener noreferrer"
-                className="card overflow-hidden group cursor-pointer transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_20px_50px_rgba(193,39,45,0.25)] block">
+              <Tilt key={p.title} className="rounded-2xl">
+              <a href={p.link} target="_blank" rel="noopener noreferrer"
+                className="card overflow-hidden group cursor-pointer transition-shadow duration-300 hover:shadow-[0_20px_50px_rgba(193,39,45,0.25)] block">
                 <div className={`relative aspect-[16/9] bg-gradient-to-br ${p.gradient} overflow-hidden`}>
                   {p.image && (
                     <Image src={p.image} alt={`${p.title} website preview`} fill
@@ -74,6 +75,7 @@ export default function PortfolioPage() {
                   </div>
                 </div>
               </a>
+              </Tilt>
             ))}
           </div>
           {filtered.length === 0 && <div className="text-center py-20 text-[#5a7090]">No projects for this filter.</div>}
@@ -136,11 +138,13 @@ export default function PortfolioPage() {
                 p.link ? "cursor-pointer hover:border-[rgba(193,39,45,0.4)]" : "cursor-default opacity-90");
               return (
                 <Reveal key={p.title} delay={i * 70}>
-                  {p.link ? (
-                    <a href={p.link} target="_blank" rel="noopener noreferrer" className={cardClass}>{inner}</a>
-                  ) : (
-                    <div className={cardClass}>{inner}</div>
-                  )}
+                  <Tilt max={5} className="rounded-2xl">
+                    {p.link ? (
+                      <a href={p.link} target="_blank" rel="noopener noreferrer" className={cardClass}>{inner}</a>
+                    ) : (
+                      <div className={cardClass}>{inner}</div>
+                    )}
+                  </Tilt>
                 </Reveal>
               );
             })}

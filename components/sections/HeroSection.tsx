@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { STATS, MARQUEE_ITEMS } from "@/lib/data";
-import { ParticleField, Counter, Reveal } from "@/components/ui";
+import { ParticleField, Counter, Reveal, Parallax } from "@/components/ui";
 import { ArrowRight, Zap, Shield, Globe } from "lucide-react";
 
 const BADGES = [
@@ -30,11 +30,16 @@ export default function HeroSection() {
             WebkitMaskImage:"radial-gradient(ellipse 90% 90% at 50% 0%, black 30%, transparent 100%)",
             maskImage:"radial-gradient(ellipse 90% 90% at 50% 0%, black 30%, transparent 100%)" }} />
 
-        {/* Blobs */}
-        <div className="blob-1" style={{ top:"-150px", left:"-150px" }} aria-hidden="true" />
-        <div className="blob-2" style={{ bottom:"-100px", right:"5%" }}  aria-hidden="true" />
+        {/* Blobs (parallax depth on scroll) */}
+        <Parallax speed={0.12} className="absolute inset-0 pointer-events-none">
+          <div className="blob-1" style={{ top:"-150px", left:"-150px" }} aria-hidden="true" />
+        </Parallax>
+        <Parallax speed={-0.08} className="absolute inset-0 pointer-events-none">
+          <div className="blob-2" style={{ bottom:"-100px", right:"5%" }}  aria-hidden="true" />
+        </Parallax>
 
-        {/* Orbiting rings (decorative) */}
+        {/* Orbiting rings (decorative, parallax depth on scroll) */}
+        <Parallax speed={0.2} className="hidden xl:block">
         <div className="absolute top-1/2 right-[8%] -translate-y-1/2 w-[380px] h-[380px] hidden xl:block" aria-hidden="true">
           {/* Outer ring */}
           <div className="absolute inset-0 border border-[rgba(193,39,45,0.15)] rounded-full animate-spin-slow" />
@@ -55,6 +60,7 @@ export default function HeroSection() {
               style={{ top:"50%", left:"50%", transform:`rotate(${deg}deg) translateX(188px) rotate(-${deg}deg) translate(-50%,-50%)`, background: i%2===0 ? "#c1272d" : "#00d4ff", boxShadow: i%2===0 ? "0 0 8px #c1272d" : "0 0 8px #00d4ff", animation: `orbit ${10+i*2}s linear infinite` }} />
           ))}
         </div>
+        </Parallax>
 
         {/* Content */}
         <div className="section-wrap relative z-10 w-full">

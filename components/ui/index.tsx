@@ -2,6 +2,9 @@
 import { useEffect, useRef, ReactNode } from "react";
 import { cn } from "@/lib/utils";
 
+export { Tilt } from "./Tilt";
+export { Parallax } from "./Parallax";
+
 /* ── Scroll Reveal ── */
 type RevealProps = { children: ReactNode; className?: string; delay?: number; dir?: "up"|"left"|"right" };
 export function Reveal({ children, className, delay = 0, dir = "up" }: RevealProps) {

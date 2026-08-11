@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { PORTFOLIO_PROJECTS, TESTIMONIALS, COMPANY } from "@/lib/data";
-import { Label, Heading, Badge, Reveal } from "@/components/ui";
+import { Label, Heading, Badge, Reveal, Tilt } from "@/components/ui";
 import { ArrowUpRight, Star } from "lucide-react";
 
 export function PortfolioPreview() {
@@ -23,6 +23,7 @@ export function PortfolioPreview() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {PORTFOLIO_PROJECTS.slice(0, 6).map((p, i) => (
             <Reveal key={p.title} delay={i * 80}>
+              <Tilt className="rounded-2xl">
               <a href={p.link} target="_blank" rel="noopener noreferrer" className="card overflow-hidden group cursor-pointer block" aria-label={p.title}>
                 {/* Visual */}
                 <div className={`relative aspect-[16/9] bg-gradient-to-br ${p.gradient} overflow-hidden`}>
@@ -58,6 +59,7 @@ export function PortfolioPreview() {
                   </div>
                 </div>
               </a>
+              </Tilt>
             </Reveal>
           ))}
         </div>
