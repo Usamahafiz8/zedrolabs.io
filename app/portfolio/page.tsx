@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { PORTFOLIO_PROJECTS } from "@/lib/data";
 import { Label, Heading, Badge, Reveal } from "@/components/ui";
 import { CTASection } from "@/components/sections/SharedSections";
@@ -43,14 +44,21 @@ export default function PortfolioPage() {
             {filtered.map((p, i) => (
               <a key={p.title} href={p.link} target="_blank" rel="noopener noreferrer"
                 className="card overflow-hidden group cursor-pointer transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_20px_50px_rgba(193,39,45,0.25)] block">
-                <div className={`relative aspect-[16/9] bg-gradient-to-br ${p.gradient} flex items-center justify-center text-5xl overflow-hidden`}>
-                  {p.emoji}
+                <div className={`relative aspect-[16/9] bg-gradient-to-br ${p.gradient} overflow-hidden`}>
+                  {p.image && (
+                    <Image src={p.image} alt={`${p.title} website preview`} fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      className="object-cover object-top transition-transform duration-500 group-hover:scale-105" />
+                  )}
+                  <div className="absolute top-3 right-3 w-9 h-9 rounded-lg bg-[#080c14]/70 backdrop-blur-sm border border-white/10 flex items-center justify-center text-base z-10">
+                    {p.emoji}
+                  </div>
                   <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity">
                     <div className="absolute left-0 right-0 h-px bg-gradient-to-r from-transparent via-[rgba(193,39,45,0.8)] to-transparent"
                       style={{ animation:"scan 2s linear infinite" }} />
                   </div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#080c14]/90 to-transparent" />
-                  <div className="absolute bottom-3 left-4 text-[10px] text-white/50" style={{ fontFamily:"var(--font-mono)" }}>{p.stats}</div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#080c14]/90 via-[#080c14]/5 to-transparent" />
+                  <div className="absolute bottom-3 left-4 text-[10px] text-white/70" style={{ fontFamily:"var(--font-mono)" }}>{p.stats}</div>
                   <div className="absolute inset-0 bg-[#080c14]/85 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-center p-6">
   <p className="text-[13px] text-[#e8ecf5] leading-relaxed mb-4">{p.desc}</p>
   <span className="text-[12px] font-bold text-[#e63939] tracking-wide">Visit Live Site →</span>

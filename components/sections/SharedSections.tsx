@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { PORTFOLIO_PROJECTS, TESTIMONIALS, COMPANY } from "@/lib/data";
 import { Label, Heading, Badge, Reveal } from "@/components/ui";
 import { ArrowUpRight, Star } from "lucide-react";
@@ -24,15 +25,22 @@ export function PortfolioPreview() {
             <Reveal key={p.title} delay={i * 80}>
               <a href={p.link} target="_blank" rel="noopener noreferrer" className="card overflow-hidden group cursor-pointer block" aria-label={p.title}>
                 {/* Visual */}
-                <div className={`relative aspect-[16/9] bg-gradient-to-br ${p.gradient} flex items-center justify-center text-5xl overflow-hidden`}>
-                  {p.emoji}
+                <div className={`relative aspect-[16/9] bg-gradient-to-br ${p.gradient} overflow-hidden`}>
+                  {p.image && (
+                    <Image src={p.image} alt={`${p.title} website preview`} fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      className="object-cover object-top transition-transform duration-500 group-hover:scale-105" />
+                  )}
+                  <div className="absolute top-3 right-3 w-9 h-9 rounded-lg bg-[#080c14]/70 backdrop-blur-sm border border-white/10 flex items-center justify-center text-base z-10">
+                    {p.emoji}
+                  </div>
                   {/* Scan line effect */}
                   <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-400">
                     <div className="absolute left-0 right-0 h-px bg-gradient-to-r from-transparent via-[rgba(193,39,45,0.8)] to-transparent"
                       style={{ animation:"scan 2s linear infinite" }} />
                   </div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#080c14]/90 to-transparent" />
-                  <div className="absolute bottom-3 left-4 text-[10px] text-white/50 font-mono">{p.stats}</div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#080c14]/90 via-[#080c14]/5 to-transparent" />
+                  <div className="absolute bottom-3 left-4 text-[10px] text-white/70 font-mono">{p.stats}</div>
                 </div>
 
                 <div className="p-6">

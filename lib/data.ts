@@ -186,6 +186,7 @@ export const PORTFOLIO_PROJECTS = [
     gradient: "from-red-950 via-rose-950 to-[#080c14]",
     stats: "Built & operated by ZedroLabs",
     link: "https://invoice.zedrolabs.io",
+    image: "/portfolio/invoice-control.jpg",
   },
   {
     title: "Hajwari Jewellers",
@@ -196,6 +197,7 @@ export const PORTFOLIO_PROJECTS = [
     gradient: "from-amber-950 via-yellow-950 to-[#080c14]",
     stats: "Bridal & fine jewellery · Shopify",
     link: "https://hajwarijewellers.com/",
+    image: "/portfolio/hajwari-jewellers.jpg",
   },
   {
     title: "Bloomen",
@@ -206,6 +208,7 @@ export const PORTFOLIO_PROJECTS = [
     gradient: "from-pink-950 via-rose-950 to-[#080c14]",
     stats: "280,000+ bouquets delivered",
     link: "https://bloomen.ca/",
+    image: "/portfolio/bloomen.jpg",
   },
   {
     title: "NOVA Revenue Solutions",
@@ -216,6 +219,7 @@ export const PORTFOLIO_PROJECTS = [
     gradient: "from-emerald-950 via-teal-950 to-[#080c14]",
     stats: "Multi-state RCM & credentialing",
     link: "https://novarevenuesolution.com/",
+    image: "/portfolio/nova-revenue-solutions.jpg",
   },
   {
     title: "Psychological Therapy Associates",
@@ -226,6 +230,7 @@ export const PORTFOLIO_PROJECTS = [
     gradient: "from-sky-950 via-blue-950 to-[#080c14]",
     stats: "EMDR, CBT & trauma-focused care",
     link: "https://www.psychtherapyassoc.com/",
+    image: "/portfolio/psych-therapy-associates.jpg",
   },
   {
     title: "Planetize Packaging",
@@ -236,6 +241,7 @@ export const PORTFOLIO_PROJECTS = [
     gradient: "from-green-950 via-lime-950 to-[#080c14]",
     stats: "Sustainable food-service packaging",
     link: "https://planetizepackaging.ca/",
+    image: "/portfolio/planetize-packaging.jpg",
   },
   {
     title: "The Altitude Marketing",
@@ -246,6 +252,7 @@ export const PORTFOLIO_PROJECTS = [
     gradient: "from-orange-950 via-red-950 to-[#080c14]",
     stats: "10+ years · UK-wide clients",
     link: "https://thealtitudemarketing.co.uk/",
+    image: "/portfolio/the-altitude-marketing.jpg",
   },
   {
     title: "The Notary Guy",
@@ -256,6 +263,7 @@ export const PORTFOLIO_PROJECTS = [
     gradient: "from-slate-950 via-gray-950 to-[#080c14]",
     stats: "Mobile notary services · Canada",
     link: "https://thenotaryguy.ca/",
+    image: "/portfolio/the-notary-guy.jpg",
   },
   {
     title: "The Balanced Teacherpreneur",
@@ -266,6 +274,7 @@ export const PORTFOLIO_PROJECTS = [
     gradient: "from-orange-950 via-amber-950 to-[#080c14]",
     stats: "Courses, coaching & community",
     link: "https://www.balancedteacherpreneur.com/",
+    image: "/portfolio/balanced-teacherpreneur.jpg",
   },
   {
     title: "Mysteek Naturals",
@@ -276,6 +285,7 @@ export const PORTFOLIO_PROJECTS = [
     gradient: "from-fuchsia-950 via-purple-950 to-[#080c14]",
     stats: "Halal · Vegan · Kosher hair color",
     link: "https://mysteeknaturals.com",
+    image: "/portfolio/mysteek-naturals.jpg",
   },
   {
     title: "Indie Dream Lab",
@@ -286,6 +296,7 @@ export const PORTFOLIO_PROJECTS = [
     gradient: "from-indigo-950 via-violet-950 to-[#080c14]",
     stats: "30+ shipped titles · 2M+ players",
     link: "https://indiedreamlab.com/",
+    image: "/portfolio/indie-dream-lab.jpg",
   },
   {
     title: "GemPay",
@@ -296,6 +307,7 @@ export const PORTFOLIO_PROJECTS = [
     gradient: "from-cyan-950 via-blue-950 to-[#080c14]",
     stats: "50+ cryptocurrencies accepted",
     link: "https://gempay.io/",
+    image: "/portfolio/gempay.jpg",
   },
   {
     title: "RS Coin",
@@ -306,6 +318,7 @@ export const PORTFOLIO_PROJECTS = [
     gradient: "from-purple-950 via-indigo-950 to-[#080c14]",
     stats: "Dual-chain · Ethereum + Solana",
     link: "https://rs-coin-deployment.vercel.app/",
+    image: "/portfolio/rs-coin.jpg",
   },
   {
     title: "Braav — Challenge Coin Community",
@@ -316,6 +329,7 @@ export const PORTFOLIO_PROJECTS = [
     gradient: "from-yellow-950 via-amber-950 to-[#080c14]",
     stats: "Collector community platform",
     link: "https://www.allcoin.braav.co/",
+    image: "/portfolio/braav.jpg",
   },
 ];
 
