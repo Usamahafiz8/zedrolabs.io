@@ -25,10 +25,10 @@ type ServiceData = {
 
 /* ── Tab definitions ── */
 const TABS = [
-  { id: "va",       label: "Virtual Assistants",  icon: "🤝", badge: "From $400/mo"  },
-  { id: "dev",      label: "Dev Teams",            icon: "👥", badge: "From $800/mo"  },
-  { id: "software", label: "Custom Software",      icon: "💻", badge: "From $5K"      },
-  { id: "web3",     label: "Web3 & Blockchain",    icon: "⛓️", badge: "From $3K"      },
+  { id: "va",       label: "Virtual Assistants",  icon: "🤝", badge: "From $320/mo"  },
+  { id: "dev",      label: "Dev Teams",            icon: "👥", badge: "From $640/mo"  },
+  { id: "software", label: "Custom Software",      icon: "💻", badge: "From $4K"      },
+  { id: "web3",     label: "Web3 & Blockchain",    icon: "⛓️", badge: "From $2.4K"    },
 ];
 
 /* ── Pricing data ── */
@@ -39,7 +39,7 @@ const PRICING: Record<string, ServiceData> = {
     tiers: [
       {
         name: "Part-Time",
-        price: 400,
+        price: 320,
         period: "/month",
         priceNote: "20 hrs/week · 1 dedicated VA",
         features: [
@@ -53,7 +53,7 @@ const PRICING: Record<string, ServiceData> = {
       },
       {
         name: "Full-Time",
-        price: 800,
+        price: 640,
         period: "/month",
         priceNote: "40 hrs/week · 1 dedicated VA",
  badge: "Most Popular",
@@ -70,7 +70,7 @@ const PRICING: Record<string, ServiceData> = {
       },
       {
         name: "VA Team",
-        price: 2200,
+        price: 1760,
         period: "/month",
         priceNote: "3 dedicated VAs · team lead included",
         features: [
@@ -108,7 +108,7 @@ const PRICING: Record<string, ServiceData> = {
     tiers: [
       {
         name: "Starter",
-        price: 800,
+        price: 640,
         period: "/month per resource",
         priceNote: "Junior devs & QA · 160–180 hrs/month",
         features: [
@@ -122,7 +122,7 @@ const PRICING: Record<string, ServiceData> = {
       },
       {
         name: "Standard",
-        price: 1200,
+        price: 960,
         period: "/month per resource",
         priceNote: "Mid-level · full-stack, mobile, DevOps",
         badge: "Most Popular",
@@ -139,7 +139,7 @@ const PRICING: Record<string, ServiceData> = {
       },
       {
         name: "Premium",
-        price: 1800,
+        price: 1440,
         period: "/month per resource",
         priceNote: "Senior · AI/ML, Web3, architects",
         features: [
@@ -177,7 +177,7 @@ const PRICING: Record<string, ServiceData> = {
     tiers: [
       {
         name: "MVP / Starter",
-        price: "from $5,000",
+        price: "from $4,000",
         period: "one-time project",
         priceNote: "4–8 weeks · web or desktop app",
         features: [
@@ -192,7 +192,7 @@ const PRICING: Record<string, ServiceData> = {
       },
       {
         name: "Business App",
-        price: "from $20,000",
+        price: "from $16,000",
         period: "one-time project",
         priceNote: "8–16 weeks · full-stack SaaS or platform",
         badge: "Most Requested",
@@ -209,7 +209,7 @@ const PRICING: Record<string, ServiceData> = {
       },
       {
         name: "Enterprise",
-        price: "from $75,000",
+        price: "from $60,000",
         period: "project-based",
         priceNote: "16+ weeks · large-scale systems",
         features: [
@@ -247,7 +247,7 @@ const PRICING: Record<string, ServiceData> = {
     tiers: [
       {
         name: "Smart Contract",
-        price: "from $3,000",
+        price: "from $2,400",
         period: "one-time",
         priceNote: "1–3 contracts · internal audit included",
         features: [
@@ -262,7 +262,7 @@ const PRICING: Record<string, ServiceData> = {
       },
       {
         name: "DeFi / dApp",
-        price: "from $25,000",
+        price: "from $20,000",
         period: "one-time project",
         priceNote: "8–16 weeks · full protocol or NFT platform",
         badge: "High Demand",
@@ -280,7 +280,7 @@ const PRICING: Record<string, ServiceData> = {
       },
       {
         name: "Enterprise Blockchain",
-        price: "from $80,000",
+        price: "from $64,000",
         period: "project-based",
         priceNote: "20+ weeks · full platform or private chain",
         features: [
@@ -319,7 +319,7 @@ const PRICING: Record<string, ServiceData> = {
     tiers: [
       {
         name: "RCM Outsourcing",
-        price: "4–7%",
+        price: "3–5.5%",
         period: "of monthly collections",
         priceNote: "Full-cycle RCM · end-to-end billing",
         features: [
@@ -335,7 +335,7 @@ const PRICING: Record<string, ServiceData> = {
       },
       {
         name: "Flat Rate Billing",
-        price: "from $600",
+        price: "from $480",
         period: "/provider/month",
         priceNote: "Predictable cost · best for high-volume practices",
         badge: "Best Value",
@@ -353,7 +353,7 @@ const PRICING: Record<string, ServiceData> = {
       },
       {
         name: "Denial Management",
-        price: "from $500",
+        price: "from $400",
         period: "/month",
         priceNote: "Standalone denial management & appeals",
         features: [
@@ -391,7 +391,7 @@ const PRICING: Record<string, ServiceData> = {
     tiers: [
       {
         name: "Simple App",
-        price: "from $8,000",
+        price: "from $6,400",
         period: "one-time project",
         priceNote: "6–10 weeks · 1 platform · 5–10 screens",
         features: [
@@ -407,7 +407,7 @@ const PRICING: Record<string, ServiceData> = {
       },
       {
         name: "Cross-Platform",
-        price: "from $20,000",
+        price: "from $16,000",
         period: "one-time project",
         priceNote: "10–18 weeks · iOS + Android",
         badge: "Most Popular",
@@ -425,7 +425,7 @@ const PRICING: Record<string, ServiceData> = {
       },
       {
         name: "Enterprise Mobile",
-        price: "from $60,000",
+        price: "from $48,000",
         period: "one-time project",
         priceNote: "18+ weeks · native iOS + Android separately",
         features: [
@@ -464,7 +464,7 @@ const PRICING: Record<string, ServiceData> = {
     tiers: [
       {
         name: "Audit & Setup",
-        price: "from $2,000",
+        price: "from $1,600",
         period: "one-time",
         priceNote: "1–2 weeks · assessment & initial setup",
         features: [
@@ -479,7 +479,7 @@ const PRICING: Record<string, ServiceData> = {
       },
       {
         name: "Managed DevOps",
-        price: "from $800",
+        price: "from $640",
         period: "/month",
         priceNote: "Ongoing retainer · infrastructure management",
         badge: "Best Value",
@@ -497,7 +497,7 @@ const PRICING: Record<string, ServiceData> = {
       },
       {
         name: "Cloud Architecture",
-        price: "from $5,000",
+        price: "from $4,000",
         period: "one-time project",
         priceNote: "Full architecture design & migration",
         features: [

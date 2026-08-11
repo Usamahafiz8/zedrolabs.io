@@ -16,7 +16,7 @@ export default function VAHighlight() {
             <Label className="justify-center"> Virtual Assistants</Label>
             <Heading className="mb-4">
               Expert VAs From<br />
-              <span className="text-gradient">$400/Month</span>
+              <span className="text-gradient">$320/Month</span>
             </Heading>
             <p className="text-[#a8b8d8] max-w-[520px] mx-auto">
               Pre-vetted, English-fluent virtual assistants ready in 3–5 days. Executive, customer support,

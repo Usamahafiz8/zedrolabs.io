@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     template: "%s | ZedroLabs",
   },
   description:
-    "ZedroLabs: Top-rated software development, Web3/blockchain, and virtual assistant services from Rawalpindi, Pakistan. Trusted by 150+ clients worldwide. Dedicated teams from $800/mo.",
+    "ZedroLabs: Top-rated software development, Web3/blockchain, and virtual assistant services from Rawalpindi, Pakistan. Trusted by 150+ clients worldwide. Dedicated teams from $640/mo.",
   keywords: [
     "software development company Pakistan",
     "web3 blockchain development",

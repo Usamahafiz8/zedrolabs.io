@@ -54,18 +54,18 @@ export const CORE_SERVICES = [
     slug: "virtual-assistants",
     color: "from-amber-900/25 to-transparent",
     featured: true,
-    highlight: "From $400/mo",
+    highlight: "From $320/mo",
   },
   {
     icon: "👥",
     title: "Dedicated Dev Teams",
     short: "Staff Augmentation",
-    desc: "Pre-vetted, full-time engineers integrated directly into your team. From $800/month.",
+    desc: "Pre-vetted, full-time engineers integrated directly into your team. From $640/month.",
     markets: ["B2B", "B2G"],
     slug: "dedicated-teams",
     color: "from-orange-900/25 to-transparent",
     featured: false,
-    highlight: "From $800/mo",
+    highlight: "From $640/mo",
   },
 ];
 
@@ -106,7 +106,7 @@ export const VA_PRICING = [
   {
     name: "Part-Time VA",
     hours: "20 hrs/week",
-    price: 400,
+    price: 320,
     period: "month",
     features: ["1 dedicated VA", "Any role/specialty", "Email + chat communication", "Weekly reports", "2-day replacement guarantee"],
     featured: false,
@@ -114,7 +114,7 @@ export const VA_PRICING = [
   {
     name: "Full-Time VA",
     hours: "40 hrs/week",
-    price: 800,
+    price: 640,
     period: "month",
     features: ["1 dedicated full-time VA", "Any role/specialty", "All communication channels", "Daily reports & standups", "24hr replacement guarantee", "Free 1-week trial"],
     featured: true,
@@ -123,7 +123,7 @@ export const VA_PRICING = [
   {
     name: "VA Team",
     hours: "Multiple VAs",
-    price: 2200,
+    price: 1760,
     period: "month",
     features: ["3 dedicated VAs", "Mixed specialties", "Team lead included", "Priority support", "Same-day replacement", "Free 1-week trial", "Dedicated account manager"],
     featured: false,
@@ -133,7 +133,7 @@ export const VA_PRICING = [
 export const DEV_PRICING = [
   {
     name: "Starter",
-    price: 800,
+    price: 640,
     role: "Junior Devs, QA, Basic Roles",
     features: [
       "Junior front-end / back-end devs",
@@ -147,7 +147,7 @@ export const DEV_PRICING = [
   },
   {
     name: "Standard",
-    price: 1200,
+    price: 960,
     role: "Mid-Level Full-Stack, Mobile, DevOps",
     features: [
       "Mid-level full-stack developers",
@@ -162,7 +162,7 @@ export const DEV_PRICING = [
   },
   {
     name: "Premium",
-    price: 1800,
+    price: 1440,
     role: "Senior Engineers, AI/ML, Architects",
     features: [
       "Senior software architects",

@@ -79,7 +79,7 @@ export default function HeroSection() {
               style={{ animation:"slideUp 0.7s 0.2s ease both",  animationFillMode:"forwards" }}>
               Custom software · Web3 & Blockchain ·
               Virtual Assistants · Dedicated Teams from{" "}
-              <strong className="text-[#f0f4ff]">$800/mo</strong>
+              <strong className="text-[#f0f4ff]">$640/mo</strong>
             </p>
 
             {/* Service badges */}

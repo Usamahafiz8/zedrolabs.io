@@ -162,10 +162,10 @@ export default function ContactPage() {
                     <div className="mb-4"><label htmlFor="budget" className={L}>Budget Range</label>
                       <select id="budget" name="budget" className={F} value={form.budget} onChange={onChange}>
                         <option value="">Select budget...</option>
-                        <option>Under $5,000</option><option>$5,000–$15,000</option>
-                        <option>$15,000–$50,000</option><option>$50,000–$150,000</option>
-                        <option>$150,000+</option><option>Dedicated Team ($800–$1,800/mo)</option>
-                        <option>Virtual Assistant ($400–$2,200/mo)</option>
+                        <option>Under $4,000</option><option>$4,000–$12,000</option>
+                        <option>$12,000–$40,000</option><option>$40,000–$120,000</option>
+                        <option>$120,000+</option><option>Dedicated Team ($640–$1,440/mo)</option>
+                        <option>Virtual Assistant ($320–$1,760/mo)</option>
                       </select></div>
                     <div className="mb-6"><label htmlFor="message" className={L}>Project Description *</label>
                       <textarea id="message" name="message" required className={`${F} min-h-[130px] resize-y`}

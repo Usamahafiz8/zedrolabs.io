@@ -345,7 +345,7 @@ export default function ServicesPage() {
             </div>
             <Heading className="mb-5">Your Remote <span className="text-gradient">A-Team</span></Heading>
             <p className="text-[#a8b8d8] max-w-[600px] mb-10">
-              Hire dedicated, pre-vetted virtual assistants from $400/month. Executive support, customer
+              Hire dedicated, pre-vetted virtual assistants from $320/month. Executive support, customer
               service, social media, bookkeeping, and 20+ more specialties.
             </p>
           </Reveal>
@@ -418,7 +418,7 @@ export default function ServicesPage() {
           <Reveal>
             <div className="inline-flex items-center gap-2 border border-[rgba(193,39,45,0.3)] rounded-full px-4 py-2 text-[11px] font-bold text-[#e63939] mb-6"
               style={{ fontFamily:"var(--font-mono)", background:"rgba(193,39,45,0.06)" }}>
-              Staff Augmentation · From $800/month
+              Staff Augmentation · From $640/month
             </div>
             <Heading className="mb-5">Scale Your Team <span className="text-gradient">Instantly</span></Heading>
             <p className="text-[#a8b8d8] max-w-[600px] mb-10">
