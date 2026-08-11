@@ -70,7 +70,7 @@ export default function VAHighlight() {
         <Reveal delay={300}>
           <p className="text-center text-[13px] text-[#5a7090] mt-8">
             1-week free trial on all full-time plans · 24hr replacement guarantee ·{" "}
-            <Link href="/virtual-assistants" className="text-[#e63939] hover:underline">Learn more →</Link>
+            <Link href="/services#virtual-assistants" className="text-[#e63939] hover:underline">Learn more →</Link>
           </p>
         </Reveal>
       </div>

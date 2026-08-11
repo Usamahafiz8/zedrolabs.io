@@ -33,7 +33,7 @@ export default function ServicesSection() {
           {CORE_SERVICES.map((svc, i) => {
             const ServiceCard = (
               <Reveal key={svc.slug} delay={i * 60}>
-                <Link href={svc.slug === "virtual-assistants" ? "/virtual-assistants" : svc.slug === "medical-billing" ? "/medical-billing" : svc.slug === "web3" ? "/web3" : svc.slug === "dedicated-teams" ? "/dedicated-teams" : "/services"}>
+                <Link href={`/services#${svc.slug}`}>
                   <article className={`card p-7 h-full flex flex-col relative group cursor-pointer ${svc.featured ? "border-[rgba(193,39,45,0.3)]" : ""}`}>
                     {/* BG gradient */}
                     <div className={`absolute inset-0 bg-gradient-to-br ${svc.color} rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-400`} />

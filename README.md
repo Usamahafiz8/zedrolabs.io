@@ -14,15 +14,16 @@ npm run dev
 
 ## Pages
 
-| Route | Page | SEO Focus |
-|-------|------|-----------|
+Consolidated to 5 routes for easier management — each former standalone service page now
+lives as an anchor section on `/services` (`#web3`, `#medical-billing`, `#virtual-assistants`,
+`#dedicated-teams`, `#pricing`). Old URLs 301-redirect into the matching section (see
+`next.config.js`).
+
+| Route | Page | Covers |
+|-------|------|--------|
 | `/` | Home | Main brand + all services overview |
 | `/about` | About | Company story, team, tech stack |
-| `/services` | Services | All services + tech stack + process |
-| `/web3` | Web3 & Blockchain | DeFi, NFT, smart contracts |
-| `/medical-billing` | Medical Billing | RCM, HIPAA, coding |
-| `/virtual-assistants` | Virtual Assistants | VA pricing & specialties |
-| `/dedicated-teams` | Dev Teams Pricing | Staff augmentation |
+| `/services` | Services & Pricing | Custom software, Web3, medical billing, VAs, dedicated teams, pricing (all 7 tabs), tech stack, FAQ |
 | `/portfolio` | Portfolio | 6 projects with filter |
 | `/contact` | Contact | Full form + map |
 

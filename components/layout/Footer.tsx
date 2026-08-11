@@ -45,10 +45,11 @@ export default function Footer() {
             <h5 className="text-xs font-bold tracking-[0.12em] uppercase text-[#f0f4ff] mb-5" style={{ fontFamily:"var(--font-mono)" }}>Services</h5>
             <ul className="space-y-2.5 text-sm text-[#5a7090]">
               {[
-                ["Custom Software",       "/services"],
-                ["Web3 & Blockchain",     "/web3"],
-                ["Virtual Assistants",    "/virtual-assistants"],
-                ["Dedicated Dev Teams",   "/dedicated-teams"],
+                ["Custom Software",       "/services#custom-software"],
+                ["Web3 & Blockchain",     "/services#web3"],
+                ["Medical Billing",       "/services#medical-billing"],
+                ["Virtual Assistants",    "/services#virtual-assistants"],
+                ["Dedicated Dev Teams",   "/services#dedicated-teams"],
               ].map(([l, h]) => (
                 <li key={l}><Link href={h} className="hover:text-[#e63939] transition-colors">{l}</Link></li>
               ))}
@@ -59,9 +60,14 @@ export default function Footer() {
           <div>
             <h5 className="text-xs font-bold tracking-[0.12em] uppercase text-[#f0f4ff] mb-5" style={{ fontFamily:"var(--font-mono)" }}>Company</h5>
             <ul className="space-y-2.5 text-sm text-[#5a7090]">
-              {[["About", "/about"],["Portfolio","/portfolio"],["Pricing","/pricing"],["Book a Call","/book"],["Contact","/contact"],["Careers","/contact"],["Privacy","#"]].map(([l,h]) => (
+              {[["About", "/about"],["Portfolio","/portfolio"],["Pricing","/services#pricing"],["Contact","/contact"],["Careers","/contact"],["Privacy","#"]].map(([l,h]) => (
                 <li key={l}><Link href={h} className="hover:text-[#e63939] transition-colors">{l}</Link></li>
               ))}
+              <li>
+                <a href="https://cal.com/muhammad-osama/30min" target="_blank" rel="noopener noreferrer" className="hover:text-[#e63939] transition-colors">
+                  Book a Call
+                </a>
+              </li>
             </ul>
           </div>
 

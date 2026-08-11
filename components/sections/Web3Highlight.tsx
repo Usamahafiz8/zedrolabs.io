@@ -48,7 +48,7 @@ export default function Web3Highlight() {
             </div>
 
             <div className="flex gap-3">
-              <Link href="/web3" className="btn-primary">
+              <Link href="/services#web3" className="btn-primary">
                 <span className="flex items-center gap-2">Explore Web3 Services <ArrowRight size={15} /></span>
               </Link>
               <Link href="/contact" className="btn-ghost">Get Audit Quote</Link>

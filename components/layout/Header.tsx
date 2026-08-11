@@ -11,14 +11,15 @@ const NAV = [
   {
     label: "Services", href: "/services",
     children: [
-      { label: "Custom Software",          href: "/services",            icon: "" },
-      { label: "Web3 & Blockchain",        href: "/web3",               icon: "" },
-      { label: "Virtual Assistants",       href: "/virtual-assistants", icon: "" },
-      { label: "Dedicated Dev Teams",      href: "/dedicated-teams",    icon: "" },
+      { label: "Custom Software",          href: "/services#custom-software",    icon: "" },
+      { label: "Web3 & Blockchain",        href: "/services#web3",               icon: "" },
+      { label: "Medical Billing",          href: "/services#medical-billing",    icon: "" },
+      { label: "Virtual Assistants",       href: "/services#virtual-assistants", icon: "" },
+      { label: "Dedicated Dev Teams",      href: "/services#dedicated-teams",    icon: "" },
     ],
   },
   { label: "Portfolio", href: "/portfolio" },
-  { label: "Pricing",   href: "/pricing" },
+  { label: "Pricing",   href: "/services#pricing" },
   { label: "Contact",   href: "/contact" },
 ];
 
@@ -68,7 +69,7 @@ export default function Header() {
                 {item.children ? (
                   <div onMouseEnter={() => setDropdown(true)} onMouseLeave={() => setDropdown(false)}>
                     <button
-                      className={cn("nav-link flex items-center gap-1", pathname.startsWith("/services") || pathname === "/web3" || pathname === "/virtual-assistants" || pathname === "/dedicated-teams" ? "active" : "")}
+                      className={cn("nav-link flex items-center gap-1", pathname === "/services" ? "active" : "")}
                     >
                       {item.label} <ChevronDown size={13} className={cn("transition-transform", dropdown ? "rotate-180" : "")} />
                     </button>
@@ -99,9 +100,9 @@ export default function Header() {
 
           {/* CTAs */}
           <div className="hidden lg:flex items-center gap-3">
-            <Link href="/book" className="btn-ghost text-[13px] py-2.5 px-5">
+            <a href="https://cal.com/muhammad-osama/30min" target="_blank" rel="noopener noreferrer" className="btn-ghost text-[13px] py-2.5 px-5">
               📅 Book a Call
-            </Link>
+            </a>
             <Link href="/contact" className="btn-primary text-[13px] py-2.5 px-5">
               <span>Get Free Quote</span>
             </Link>
@@ -138,9 +139,9 @@ export default function Header() {
               )
             ))}
             <div className="pt-4 flex flex-col gap-2">
-              <Link href="/book" className="btn-ghost w-full justify-center text-sm">
+              <a href="https://cal.com/muhammad-osama/30min" target="_blank" rel="noopener noreferrer" className="btn-ghost w-full justify-center text-sm">
                 📅 Book a Discovery Call
-              </Link>
+              </a>
               <Link href="/contact" className="btn-primary w-full justify-center">
                 <span>Get Free Quote →</span>
               </Link>
