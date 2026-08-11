@@ -36,7 +36,7 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-sm text-[#5a7090] leading-relaxed max-w-[280px]">
-              Software development, Web3 & virtual assistant services — trusted by 150+ clients worldwide.
+              Software development, Web3 & virtual assistant services, trusted by 150+ clients worldwide.
             </p>
           </div>
 
@@ -53,6 +53,11 @@ export default function Footer() {
               ].map(([l, h]) => (
                 <li key={l}><Link href={h} className="hover:text-[#e63939] transition-colors">{l}</Link></li>
               ))}
+              <li>
+                <a href="https://invoice.zedrolabs.io" target="_blank" rel="noopener noreferrer" className="hover:text-[#e63939] transition-colors">
+                  Invoice Control 🧾
+                </a>
+              </li>
             </ul>
           </div>
 

@@ -19,7 +19,7 @@ export default function ServicesSection() {
           <Reveal delay={100} dir="right">
             <div className="max-w-[360px]">
               <p className="text-[#a8b8d8] text-[15px] leading-relaxed mb-4">
-                From MVP to enterprise scale, Web3 protocols to healthcare systems — we cover every technology vertical.
+                From MVP to enterprise scale, Web3 protocols to healthcare systems, we cover every technology vertical.
               </p>
               <Link href="/services" className="btn-ghost text-sm py-2.5 px-5">
                 View All Services <ArrowUpRight size={14} />

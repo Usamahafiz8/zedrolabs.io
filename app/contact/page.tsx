@@ -72,7 +72,7 @@ export default function ContactPage() {
                 <Label> Get in Touch</Label>
                 <Heading className="mb-5">We&apos;d Love<br />to Hear<br />From You</Heading>
                 <p className="text-[#a8b8d8] mb-8 leading-relaxed">
-                  Whether you have a full brief or just an idea — reach out. Our team responds within
+                  Whether you have a full brief or just an idea, reach out. Our team responds within
                   24 hours with a tailored proposal.
                 </p>
               </Reveal>
@@ -147,8 +147,8 @@ export default function ContactPage() {
                       <div><label htmlFor="market" className={L}>Market Type</label>
                         <select id="market" name="market" className={F} value={form.market} onChange={onChange}>
                           <option value="">Select...</option>
-                          <option>B2B — Enterprise</option><option>B2C — Consumer</option>
-                          <option>B2G — Government</option><option>Web3 / DeFi</option><option>Startup</option>
+                          <option>B2B: Enterprise</option><option>B2C: Consumer</option>
+                          <option>B2G: Government</option><option>Web3 / DeFi</option><option>Startup</option>
                         </select></div>
                       <div><label htmlFor="service" className={L}>Service</label>
                         <select id="service" name="service" className={F} value={form.service} onChange={onChange}>

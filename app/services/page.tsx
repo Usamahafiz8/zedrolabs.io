@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Script from "next/script";
 import {
   CORE_SERVICES, WEB3_SERVICES, MEDICAL_BILLING_SERVICES, VA_SERVICES,
   TECH_STACK, FAQS,
@@ -10,14 +11,21 @@ import PricingTabs from "@/components/sections/PricingTabs";
 import { ArrowUpRight, Check, CheckCircle, Shield, Zap, Globe } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Services & Pricing — Custom Software, Web3, Medical Billing, VAs & Dev Teams",
+  title: "Services & Pricing: Custom Software, Web3, Medical Billing, VAs & Dev Teams",
   description:
-    "Everything ZedroLabs offers in one place: custom software, Web3/blockchain, medical billing & RCM, virtual assistants, and dedicated dev teams — with transparent pricing for every service.",
+    "Everything ZedroLabs offers in one place: custom software, Web3/blockchain, medical billing & RCM, virtual assistants, and dedicated dev teams, with transparent pricing for every service.",
   keywords: [
     "software development services", "IT services Pakistan", "web3 blockchain development",
     "medical billing services", "revenue cycle management", "virtual assistant services",
     "dedicated development team", "staff augmentation Pakistan", "ZedroLabs pricing",
+    "hire virtual assistant", "smart contract development company", "medical billing outsourcing company",
   ],
+  alternates: { canonical: "https://zedrolabs.io/services" },
+  openGraph: {
+    title: "Services & Pricing: Custom Software, Web3, Medical Billing, VAs & Dev Teams",
+    description: "Every ZedroLabs service and price on one page: custom software, Web3, medical billing, virtual assistants, and dedicated dev teams.",
+    url: "https://zedrolabs.io/services",
+  },
 };
 
 const QUICK_NAV = [
@@ -49,7 +57,7 @@ const CHAINS = [
   { name: "Cosmos",    icon: "✦",  color: "#2E3148" },
 ];
 const WEB3_FAQS = [
-  { q: "Do you do smart contract security audits?", a: "Yes — all contracts we deploy undergo a thorough internal security review. For high-value DeFi protocols, we partner with top-tier audit firms or run formal verification." },
+  { q: "Do you do smart contract security audits?", a: "Yes. All contracts we deploy undergo a thorough internal security review. For high-value DeFi protocols, we partner with top-tier audit firms or run formal verification." },
   { q: "Which blockchains do you support?", a: "Ethereum (EVM), Solana (Rust/Anchor), Polygon, BSC, Arbitrum, Base, Avalanche, Cosmos/IBC, and more." },
   { q: "What's your typical timeline for a DeFi protocol?", a: "A basic lending protocol takes 8–12 weeks from design to audited deployment. Full-featured AMMs or yield optimizers typically take 16–24 weeks." },
 ];
@@ -73,13 +81,26 @@ const MED_FAQS = [
 
 const VA_FAQS = [
   { q: "How quickly can I get started?", a: "Most clients have a matched and onboarded VA within 3–5 business days." },
-  { q: "What if my VA doesn't work out?", a: "Free 1-week trial on full-time packages, and a 24-hour replacement guarantee — no questions asked." },
-  { q: "What hours do VAs work?", a: "Whatever hours you need — EST, PST, GMT, or Gulf timezone coverage." },
+  { q: "What if my VA doesn't work out?", a: "Free 1-week trial on full-time packages, and a 24-hour replacement guarantee, no questions asked." },
+  { q: "What hours do VAs work?", a: "Whatever hours you need: EST, PST, GMT, or Gulf timezone coverage." },
 ];
+
+const ALL_FAQS_FOR_SCHEMA = [...WEB3_FAQS, ...MED_FAQS, ...VA_FAQS, ...FAQS];
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: ALL_FAQS_FOR_SCHEMA.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a },
+  })),
+};
 
 export default function ServicesPage() {
   return (
     <>
+      <Script id="faq-jsonld" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+
       {/* Hero */}
       <section className="pt-16 bg-[#080c14] relative overflow-hidden min-h-[55vh] flex items-center">
         <div className="bg-grid absolute inset-0 pointer-events-none opacity-60"
@@ -95,7 +116,7 @@ export default function ServicesPage() {
               <span className="text-gradient">Build & Scale</span>
             </h1>
             <p className="text-[#a8b8d8] text-lg max-w-[520px] mb-8">
-              Custom software, Web3, medical billing, virtual assistants, and dedicated dev teams —
+              Custom software, Web3, medical billing, virtual assistants, and dedicated dev teams:
               every service, and every price, on one page.
             </p>
             <div className="flex flex-wrap gap-2">
@@ -178,7 +199,7 @@ export default function ServicesPage() {
             </div>
             <Heading className="mb-5">Build the <span style={{ color:"#00d4ff" }}>Decentralized</span> Future</Heading>
             <p className="text-[#a8b8d8] max-w-[620px] mb-10">
-              From audited DeFi protocols to enterprise blockchain — our Web3 team has shipped $50M+ in TVL
+              From audited DeFi protocols to enterprise blockchain, our Web3 team has shipped $50M+ in TVL
               and 1000+ smart contracts across 8+ blockchains.
             </p>
           </Reveal>
@@ -266,7 +287,7 @@ export default function ServicesPage() {
               <Heading className="mb-5">HIPAA-Compliant<br /><span style={{ color:"#00ff88" }}>Revenue Cycle Management</span></Heading>
               <p className="text-[#a8b8d8] leading-relaxed mb-8">
                 Our HIPAA-certified billing specialists help healthcare providers increase collections,
-                reduce denials, and focus on patient care — not paperwork. We sign BAAs and handle
+                reduce denials, and focus on patient care, not paperwork. We sign BAAs and handle
                 everything from coding to follow-up.
               </p>
               <ul className="space-y-3 mb-8">
@@ -345,13 +366,13 @@ export default function ServicesPage() {
             <Reveal>
               <Label> Why Our VAs?</Label>
               <Heading className="mb-6">Not Just <span className="text-gradient">Contractors</span></Heading>
-              <p className="text-[#a8b8d8] mb-8">Our VAs are career professionals — not freelancers with 50 other clients. They work exclusively for you.</p>
+              <p className="text-[#a8b8d8] mb-8">Our VAs are career professionals, not freelancers with 50 other clients. They work exclusively for you.</p>
               <ul className="space-y-3">
                 {[
                   "Multi-stage vetting: interview, skills test, background check",
-                  "Dedicated to 1 client at a time — not shared",
+                  "Dedicated to 1 client at a time, not shared",
                   "100% English-fluent with professional communication",
-                  "24hr replacement guarantee — no disruption",
+                  "24hr replacement guarantee, no disruption",
                 ].map((f) => (
                   <li key={f} className="flex items-start gap-3 text-[14px] text-[#a8b8d8]">
                     <Check size={15} className="text-[#f5a623] mt-0.5 flex-shrink-0" />{f}
@@ -401,7 +422,7 @@ export default function ServicesPage() {
             </div>
             <Heading className="mb-5">Scale Your Team <span className="text-gradient">Instantly</span></Heading>
             <p className="text-[#a8b8d8] max-w-[600px] mb-10">
-              Pre-vetted engineers integrated directly into your team. Pay a flat monthly rate — no
+              Pre-vetted engineers integrated directly into your team. Pay a flat monthly rate: no
               recruitment, no payroll, no overhead.
             </p>
           </Reveal>
@@ -427,6 +448,37 @@ export default function ServicesPage() {
             <div className="flex gap-3 flex-wrap">
               <Link href="/contact" className="btn-primary">Get Started →</Link>
               <a href="#pricing" className="btn-ghost">See dedicated team pricing ↓</a>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* ── Startup Program ── */}
+      <section className="py-16 bg-[#0d1220] border-y border-[rgba(193,39,45,0.15)]">
+        <div className="section-wrap">
+          <Reveal>
+            <div className="card p-8 md:p-10 relative overflow-hidden border-[rgba(193,39,45,0.25)]">
+              <div className="absolute top-0 right-0 w-64 h-64 rounded-full pointer-events-none"
+                style={{ background: "radial-gradient(circle,rgba(193,39,45,0.15) 0%,transparent 70%)" }} />
+              <div className="relative z-10 grid grid-cols-1 lg:grid-cols-[auto_1fr_auto] gap-6 items-center">
+                <div className="flex items-center gap-4">
+                  <div className="text-4xl">🚀</div>
+                  <div>
+                    <div className="text-[11px] font-bold uppercase tracking-widest text-[#e63939] mb-1" style={{ fontFamily: "var(--font-mono)" }}>
+                      Startup Program
+                    </div>
+                    <h3 className="t-h3 text-[#f0f4ff]">20% Off Your First 3 Months</h3>
+                  </div>
+                </div>
+                <p className="text-[#a8b8d8] text-[14px] leading-relaxed">
+                  Pre-seed or bootstrapped, under 2 years old, team of 10 or fewer? Ask about our startup
+                  rate on any service: custom software, a dedicated dev team, or a virtual assistant.
+                  Mention &quot;Startup&quot; when you reach out.
+                </p>
+                <Link href="/contact" className="btn-primary flex-shrink-0">
+                  <span>Claim Startup Rate →</span>
+                </Link>
+              </div>
             </div>
           </Reveal>
         </div>

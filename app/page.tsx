@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
 import HeroSection from "@/components/sections/HeroSection";
 import ServicesSection from "@/components/sections/ServicesSection";
+import ProductHighlight from "@/components/sections/ProductHighlight";
 import Web3Highlight from "@/components/sections/Web3Highlight";
 import VAHighlight from "@/components/sections/VAHighlight";
 import { PortfolioPreview, TestimonialsSection, CTASection } from "@/components/sections/SharedSections";
 
 export const metadata: Metadata = {
-  title: "ZedroLabs — Software Development, Web3 & Virtual Assistants | Pakistan",
+  title: "ZedroLabs: Software Development, Web3 & Virtual Assistants | Pakistan",
   description: "ZedroLabs: Top-rated software development, Web3/blockchain, and virtual assistant services from Rawalpindi, Pakistan. 150+ clients. Free quote in 24hrs.",
+  alternates: { canonical: "https://zedrolabs.io" },
 };
 
 export default function HomePage() {
@@ -15,6 +17,7 @@ export default function HomePage() {
     <>
       <HeroSection />
       <ServicesSection />
+      <ProductHighlight />
       <Web3Highlight />
       <VAHighlight />
       <PortfolioPreview />

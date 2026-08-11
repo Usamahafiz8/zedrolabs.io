@@ -121,7 +121,7 @@ export default function HeroSection() {
                 {[...Array(5)].map((_,i) => (
                   <span key={i} className="text-[#f5a623] text-xs">★</span>
                 ))}
-                <span className="text-[12px] text-[#5a7090]">5.0 — 98% Satisfaction</span>
+                <span className="text-[12px] text-[#5a7090]">5.0 · 98% Satisfaction</span>
               </div>
             </div>
 

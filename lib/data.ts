@@ -38,7 +38,7 @@ export const CORE_SERVICES = [
     icon: "⛓️",
     title: "Web3 & Blockchain",
     short: "DeFi · NFT · Smart Contracts",
-    desc: "End-to-end blockchain development — DeFi protocols, NFT platforms, DAO governance, and enterprise blockchain.",
+    desc: "End-to-end blockchain development: DeFi protocols, NFT platforms, DAO governance, and enterprise blockchain.",
     markets: ["B2B", "Web3"],
     slug: "web3",
     color: "from-purple-900/30 to-transparent",
@@ -70,7 +70,7 @@ export const CORE_SERVICES = [
 ];
 
 export const WEB3_SERVICES = [
-  { icon: "📜", title: "Smart Contract Development", desc: "Solidity, Rust, and Cairo contracts — audited, gas-optimized, and production-ready." },
+  { icon: "📜", title: "Smart Contract Development", desc: "Solidity, Rust, and Cairo contracts: audited, gas-optimized, and production-ready." },
   { icon: "🏦", title: "DeFi Protocol Development", desc: "AMMs, lending protocols, yield optimizers, staking platforms, and liquidity pools." },
   { icon: "🖼️", title: "NFT Platforms & Marketplaces", desc: "Custom NFT minting, marketplaces, royalty systems, and fractional ownership." },
   { icon: "🏛️", title: "DAO & Governance Systems", desc: "On-chain governance, voting mechanisms, treasury management, and token economics." },
@@ -82,7 +82,7 @@ export const WEB3_SERVICES = [
 
 export const MEDICAL_BILLING_SERVICES = [
   { icon: "📋", title: "Medical Billing & Coding", desc: "ICD-10, CPT, and HCPCS coding expertise across all specialties with 98%+ accuracy." },
-  { icon: "💊", title: "Revenue Cycle Management", desc: "End-to-end RCM — eligibility verification, claim submission, payment posting, and AR follow-up." },
+  { icon: "💊", title: "Revenue Cycle Management", desc: "End-to-end RCM: eligibility verification, claim submission, payment posting, and AR follow-up." },
   { icon: "🔄", title: "Denial Management", desc: "Systematic denial analysis, appeal filing, and root-cause resolution to maximize collections." },
   { icon: "🏥", title: "EHR/EMR Integration", desc: "Seamless integration with Epic, Cerner, Athena, DrChrono, and 30+ EMR systems." },
   { icon: "📊", title: "Analytics & Reporting", desc: "Custom financial dashboards, payer analysis, KPI tracking, and collection forecasting." },
@@ -179,7 +179,7 @@ export const DEV_PRICING = [
 export const PORTFOLIO_PROJECTS = [
   {
     title: "Invoice Control",
-    desc: "Built & operated in-house by ZedroLabs — branded invoice creation and payment tracking for freelancers and startup founders, free to start, no spreadsheet required.",
+    desc: "Built and operated in-house by ZedroLabs. Branded invoice creation and payment tracking for freelancers and startup founders, free to start, no spreadsheet required.",
     tech: ["SaaS", "In-House Product"],
     market: "B2B",
     emoji: "🧾",
@@ -190,7 +190,7 @@ export const PORTFOLIO_PROJECTS = [
   },
   {
     title: "Hajwari Jewellers",
-    desc: "Shopify storefront for a handcrafted fine-jewellery brand — bridal sets, bangles, and custom pieces with premium packaging for the South Asian bridal market.",
+    desc: "Shopify storefront for a handcrafted fine-jewellery brand: bridal sets, bangles, and custom pieces with premium packaging for the South Asian bridal market.",
     tech: ["Shopify", "Liquid", "E-Commerce"],
     market: "B2C",
     emoji: "💍",
@@ -201,7 +201,7 @@ export const PORTFOLIO_PROJECTS = [
   },
   {
     title: "Bloomen",
-    desc: "Same-day flower delivery platform for the Greater Toronto Area — full catalog, subscriptions, and dedicated wedding/event floral services.",
+    desc: "Same-day flower delivery platform for the Greater Toronto Area: full catalog, subscriptions, and dedicated wedding/event floral services.",
     tech: ["E-Commerce", "Web Design"],
     market: "B2C",
     emoji: "🌸",
@@ -212,7 +212,7 @@ export const PORTFOLIO_PROJECTS = [
   },
   {
     title: "NOVA Revenue Solutions",
-    desc: "Revenue cycle management site for a US healthcare billing company — claims, credentialing, denial management, and EHR integrations across major systems.",
+    desc: "Revenue cycle management site for a US healthcare billing company: claims, credentialing, denial management, and EHR integrations across major systems.",
     tech: ["RCM", "Healthcare IT", "Web Design"],
     market: "B2B",
     emoji: "🏥",
@@ -223,7 +223,7 @@ export const PORTFOLIO_PROJECTS = [
   },
   {
     title: "Psychological Therapy Associates",
-    desc: "Practice website for a Kansas-based therapy clinic — service pages, therapist bios, and an online client portal for booking.",
+    desc: "Practice website for a Kansas-based therapy clinic: service pages, therapist bios, and an online client portal for booking.",
     tech: ["Web Design", "Healthcare"],
     market: "B2C",
     emoji: "🧠",
@@ -234,7 +234,7 @@ export const PORTFOLIO_PROJECTS = [
   },
   {
     title: "Planetize Packaging",
-    desc: "E-commerce site for a Toronto-area eco-friendly packaging supplier — compostable and recyclable takeout packaging for restaurants and cafés.",
+    desc: "E-commerce site for a Toronto-area eco-friendly packaging supplier: compostable and recyclable takeout packaging for restaurants and cafés.",
     tech: ["E-Commerce", "Web Design"],
     market: "B2B",
     emoji: "📦",
@@ -245,7 +245,7 @@ export const PORTFOLIO_PROJECTS = [
   },
   {
     title: "The Altitude Marketing",
-    desc: "Agency site for a Liverpool-based digital marketing firm — SEO, PPC, and web design services for UK brands.",
+    desc: "Agency site for a Liverpool-based digital marketing firm: SEO, PPC, and web design services for UK brands.",
     tech: ["Web Design", "Branding"],
     market: "B2B",
     emoji: "📈",
@@ -256,7 +256,7 @@ export const PORTFOLIO_PROJECTS = [
   },
   {
     title: "The Notary Guy",
-    desc: "Local service website for a Canadian mobile notary business — service area, booking, and pricing information.",
+    desc: "Local service website for a Canadian mobile notary business: service area, booking, and pricing information.",
     tech: ["Web Design"],
     market: "B2C",
     emoji: "📝",
@@ -267,7 +267,7 @@ export const PORTFOLIO_PROJECTS = [
   },
   {
     title: "The Balanced Teacherpreneur",
-    desc: "Coaching & community platform helping educators build businesses outside the classroom — courses, memberships, and a mentorship funnel.",
+    desc: "Coaching & community platform helping educators build businesses outside the classroom: courses, memberships, and a mentorship funnel.",
     tech: ["Web Design", "E-Commerce"],
     market: "B2C",
     emoji: "🍎",
@@ -278,7 +278,7 @@ export const PORTFOLIO_PROJECTS = [
   },
   {
     title: "Mysteek Naturals",
-    desc: "Shopify store for a clean, temporary hair-color brand — product bundles, a shade-matching quiz, and a tiered creator partnership program.",
+    desc: "Shopify store for a clean, temporary hair-color brand: product bundles, a shade-matching quiz, and a tiered creator partnership program.",
     tech: ["Shopify", "E-Commerce"],
     market: "B2C",
     emoji: "🎨",
@@ -289,7 +289,7 @@ export const PORTFOLIO_PROJECTS = [
   },
   {
     title: "Indie Dream Lab",
-    desc: "Studio site for a mobile game development house building Unity-based, skill-based real-money games — portfolio, services, and discovery-call booking.",
+    desc: "Studio site for a mobile game development house building Unity-based, skill-based real-money games: portfolio, services, and discovery-call booking.",
     tech: ["Web Design", "Unity"],
     market: "B2B",
     emoji: "🎮",
@@ -300,7 +300,7 @@ export const PORTFOLIO_PROJECTS = [
   },
   {
     title: "GemPay",
-    desc: "Marketing site for a crypto payment processor — merchants accept 50+ cryptocurrencies and settle directly to cash, non-custodially.",
+    desc: "Marketing site for a crypto payment processor: merchants accept 50+ cryptocurrencies and settle directly to cash, non-custodially.",
     tech: ["Web3", "Fintech", "Web Design"],
     market: "Web3",
     emoji: "💎",
@@ -311,7 +311,7 @@ export const PORTFOLIO_PROJECTS = [
   },
   {
     title: "RS Coin",
-    desc: "Dual-chain credential platform — an ERC-20 governance token on Ethereum (RS-CORE) paired with an SPL execution token on Solana (RS-FLOW), with tiered access NFTs.",
+    desc: "Dual-chain credential platform: an ERC-20 governance token on Ethereum (RS-CORE) paired with an SPL execution token on Solana (RS-FLOW), with tiered access NFTs.",
     tech: ["Solidity", "Solana", "Web3"],
     market: "Web3",
     emoji: "⛓️",
@@ -321,8 +321,8 @@ export const PORTFOLIO_PROJECTS = [
     image: "/portfolio/rs-coin.jpg",
   },
   {
-    title: "Braav — Challenge Coin Community",
-    desc: "Community platform for challenge coin collectors — share, discover, and connect with enthusiasts around physical challenge coins.",
+    title: "Braav Challenge Coin Community",
+    desc: "Community platform for challenge coin collectors: share, discover, and connect with enthusiasts around physical challenge coins.",
     tech: ["Web Design", "Community"],
     market: "B2C",
     emoji: "🪙",
@@ -331,33 +331,130 @@ export const PORTFOLIO_PROJECTS = [
     link: "https://www.allcoin.braav.co/",
     image: "/portfolio/braav.jpg",
   },
+  {
+    title: "Mintsy",
+    desc: "Token launchpad platform for the memecoin market: create, launch, and trade tokens.",
+    tech: ["Web3", "Solana"],
+    market: "Web3",
+    emoji: "🪙",
+    gradient: "from-orange-950 via-amber-950 to-[#080c14]",
+    stats: "Token launchpad",
+    link: "https://mintsy.fun/",
+  },
+  {
+    title: "MintsyPlus",
+    desc: "Analytics and screener tool for tokens launched on Mintsy: live pricing, volume, market cap, and liquidity tracking.",
+    tech: ["Web3", "Solana", "Analytics"],
+    market: "Web3",
+    emoji: "📊",
+    gradient: "from-amber-950 via-yellow-950 to-[#080c14]",
+    stats: "Real-time token analytics",
+    link: "https://mintsy.plus/",
+    image: "/portfolio/mintsy-plus.jpg",
+  },
+  {
+    title: "UCURS",
+    desc: "E-commerce platform for entrepreneurs: build a storefront, list products on a shared marketplace, and manage orders without hiring a developer.",
+    tech: ["SaaS", "E-Commerce", "Web Design"],
+    market: "B2B",
+    emoji: "🛍️",
+    gradient: "from-orange-950 via-red-950 to-[#080c14]",
+    stats: "15-day free trial",
+    link: "https://www.ucurs.com/",
+    image: "/portfolio/ucurs.jpg",
+  },
+  {
+    title: "Blast Wheels",
+    desc: "Play-to-earn NFT racing game on the Sui blockchain: live multiplayer races, collectible cars, and a $WHEELS token marketplace.",
+    tech: ["Web3", "Sui", "Gaming"],
+    market: "Web3",
+    emoji: "🏎️",
+    gradient: "from-orange-950 via-amber-950 to-[#080c14]",
+    stats: "Play-to-earn racing on Sui",
+    link: "https://blast-wheels.com/",
+    image: "/portfolio/blast-wheels.jpg",
+  },
+];
+
+/* Actively in development, not yet public/launched — shown as an exclusive preview, not a finished case study. */
+export const CURRENT_PROJECTS = [
+  {
+    title: "Schnitzy Haus",
+    desc: "Brand and ordering site for a schnitzel-focused food brand, currently in build.",
+    tech: ["Web Design", "E-Commerce"],
+    market: "B2C",
+    emoji: "🍽️",
+    gradient: "from-amber-950 via-orange-950 to-[#080c14]",
+    link: null,
+    image: null,
+  },
+  {
+    title: "Kwik Fat Cut",
+    desc: "Free education platform on Jamaican and Caribbean ancestral food wisdom, built around \"education before intervention.\" Based in Kingston, Jamaica.",
+    tech: ["Web Design", "Content Platform"],
+    market: "B2C",
+    emoji: "🥗",
+    gradient: "from-yellow-950 via-amber-950 to-[#080c14]",
+    link: "https://kwikfatcut.com/",
+    image: "/portfolio/kwikfatcut.jpg",
+  },
+  {
+    title: "Multi Brand Invoice",
+    desc: "Next iteration of Invoice Control: one account, multiple branded businesses, each with its own invoice numbering and branding.",
+    tech: ["SaaS", "In-House Product"],
+    market: "B2B",
+    emoji: "🧾",
+    gradient: "from-red-950 via-rose-950 to-[#080c14]",
+    link: null,
+    image: null,
+  },
+  {
+    title: "NFT Marketplace",
+    desc: "In-house NFT marketplace build: minting, listings, and trading infrastructure.",
+    tech: ["Web3", "Solidity"],
+    market: "Web3",
+    emoji: "🖼️",
+    gradient: "from-purple-950 via-fuchsia-950 to-[#080c14]",
+    link: null,
+    image: null,
+  },
+  {
+    title: "Liquidity Manager",
+    desc: "In-house DeFi tool for automated liquidity position management across pools.",
+    tech: ["Web3", "DeFi"],
+    market: "Web3",
+    emoji: "💧",
+    gradient: "from-cyan-950 via-blue-950 to-[#080c14]",
+    link: null,
+    image: null,
+  },
 ];
 
 export const TESTIMONIALS = [
   {
     name: "Marcus Chen",
-    role: "CTO, FinTech Startup — San Francisco",
+    role: "CTO, FinTech Startup, San Francisco",
     avatar: "MC",
     rating: 5,
     text: "ZedroLabs delivered our DeFi protocol 3 weeks early and under budget. The smart contract audit they ran caught 2 critical vulnerabilities before launch. These guys are absolute pros.",
   },
   {
     name: "Dr. Sarah Williams",
-    role: "Practice Administrator — Houston Medical Group",
+    role: "Practice Administrator, Houston Medical Group",
     avatar: "SW",
     rating: 5,
     text: "Our collections went up 34% after switching to ZedroLabs for RCM. Their medical billing team knows the industry inside-out and their denial management is phenomenal.",
   },
   {
     name: "Alex Rodriguez",
-    role: "CEO, E-Commerce Brand — Miami",
+    role: "CEO, E-Commerce Brand, Miami",
     avatar: "AR",
     rating: 5,
     text: "The virtual assistant they matched me with is incredible. She manages my entire inbox, social media, and customer support. It's like having a superstar employee for a fraction of the cost.",
   },
   {
     name: "James O'Brien",
-    role: "VP Engineering, Enterprise SaaS — London",
+    role: "VP Engineering, Enterprise SaaS, London",
     avatar: "JO",
     rating: 5,
     text: "We've used ZedroLabs for dedicated engineering teams for 2 years. Consistently excellent talent, transparent communication, and the time zone overlap with UK hours is perfect.",

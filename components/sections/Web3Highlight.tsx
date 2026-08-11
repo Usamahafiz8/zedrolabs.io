@@ -34,7 +34,7 @@ export default function Web3Highlight() {
               Future
             </Heading>
             <p className="text-[#a8b8d8] leading-relaxed mb-8">
-              From DeFi protocols to enterprise blockchain — our Web3 team has shipped over $50M in TVL
+              From DeFi protocols to enterprise blockchain, our Web3 team has shipped over $50M in TVL
               across Ethereum, Solana, Polygon, and more. Every contract is internally audited before deployment.
             </p>
 

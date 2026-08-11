@@ -10,7 +10,7 @@ import { COMPANY } from "@/lib/data";
 export const metadata: Metadata = {
   metadataBase: new URL("https://zedrolabs.io"),
   title: {
-    default: "ZedroLabs — Software Development, Web3 & Virtual Assistants | Pakistan",
+    default: "ZedroLabs: Software Development, Web3 & Virtual Assistants | Pakistan",
     template: "%s | ZedroLabs",
   },
   description:
@@ -40,21 +40,23 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://zedrolabs.io",
     siteName: "ZedroLabs",
-    title: "ZedroLabs — Software Development, Web3 & Virtual Assistants",
-    description: "Top-rated IT services from Pakistan — custom software, Web3, and VAs. 150+ clients, 98% satisfaction. Get a free quote.",
-    images: [{ url: "https://zedrolabs.io/og-image.jpg", width: 1200, height: 630, alt: "ZedroLabs" }],
+    title: "ZedroLabs: Software Development, Web3 & Virtual Assistants",
+    description: "Top-rated IT services from Pakistan: custom software, Web3, and VAs. 150+ clients, 98% satisfaction. Get a free quote.",
+    images: [{ url: "https://zedrolabs.io/og-image.jpg", width: 1200, height: 630, alt: "ZedroLabs: Software Development, Web3 & Virtual Assistants" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@zedrolabs",
     creator: "@zedrolabs",
-    title: "ZedroLabs — Software Development & Web3 | Pakistan",
-    description: "Top-rated IT services from Pakistan — custom software, Web3, and VAs.",
+    title: "ZedroLabs: Software Development & Web3 | Pakistan",
+    description: "Top-rated IT services from Pakistan: custom software, Web3, and VAs.",
     images: ["https://zedrolabs.io/og-image.jpg"],
   },
   alternates: {
     canonical: "https://zedrolabs.io",
   },
+  // Once you register the site in Google Search Console, add the token here:
+  // verification: { google: "your-token-here" },
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon-16x16.png",
@@ -65,6 +67,14 @@ export const metadata: Metadata = {
 };
 
 /* ── JSON-LD Structured Data ── */
+const SERVICES_FOR_SCHEMA = [
+  { name: "Custom Software Development", anchor: "custom-software", type: "Software Development" },
+  { name: "Web3 & Blockchain Development", anchor: "web3", type: "Blockchain Development" },
+  { name: "Medical Billing & Revenue Cycle Management", anchor: "medical-billing", type: "Medical Billing" },
+  { name: "Virtual Assistant Services", anchor: "virtual-assistants", type: "Virtual Assistant Services" },
+  { name: "Dedicated Development Teams", anchor: "dedicated-teams", type: "Staff Augmentation" },
+];
+
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
@@ -73,7 +83,8 @@ const jsonLd = {
       "@id": "https://zedrolabs.io/#org",
       name: "ZedroLabs",
       url: "https://zedrolabs.io",
-      logo: "https://zedrolabs.io/logo.png",
+      logo: "https://zedrolabs.io/android-chrome-512x512.png",
+      image: "https://zedrolabs.io/og-image.jpg",
       description: "Software development, Web3/blockchain, and virtual assistant services from Rawalpindi, Pakistan.",
       foundingDate: "2016",
       address: {
@@ -87,7 +98,19 @@ const jsonLd = {
         { "@type": "ContactPoint", email: COMPANY.email, contactType: "customer service" },
       ],
       areaServed: "Worldwide",
-      knowsAbout: ["Software Development", "Blockchain", "Virtual Assistants"],
+      knowsAbout: ["Software Development", "Blockchain", "Virtual Assistants", "Medical Billing", "Staff Augmentation"],
+      makesOffer: SERVICES_FOR_SCHEMA.map((s) => ({
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          "@id": `https://zedrolabs.io/services#${s.anchor}`,
+          name: s.name,
+          serviceType: s.type,
+          provider: { "@id": "https://zedrolabs.io/#org" },
+          areaServed: "Worldwide",
+          url: `https://zedrolabs.io/services#${s.anchor}`,
+        },
+      })),
     },
     {
       "@type": "WebSite",

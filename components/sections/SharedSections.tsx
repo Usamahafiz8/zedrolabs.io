@@ -133,7 +133,7 @@ export function CTASection() {
           </h2>
 
           <p className="text-[#a8b8d8] max-w-[480px] mx-auto mb-10 text-[16px]">
-            Join 150+ clients who trust ZedroLabs. From Web3 protocols to medical billing systems —
+            Join 150+ clients who trust ZedroLabs. From Web3 protocols to medical billing systems,
             we deliver results.
           </p>
 

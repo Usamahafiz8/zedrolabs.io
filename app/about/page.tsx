@@ -6,9 +6,15 @@ import { CTASection } from "@/components/sections/SharedSections";
 import { Check } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "About ZedroLabs — Software Development Company | Rawalpindi, Pakistan",
+  title: "About ZedroLabs: Software Development Company | Rawalpindi, Pakistan",
   description: "ZedroLabs: 8+ years of software development, AI, Web3, medical billing and VA services from Rawalpindi, Pakistan. 45+ engineers, 150+ projects, 98% satisfaction.",
   keywords: ["ZedroLabs about", "software company Rawalpindi", "IT company Pakistan", "offshore development company"],
+  alternates: { canonical: "https://zedrolabs.io/about" },
+  openGraph: {
+    title: "About ZedroLabs: Software Development Company",
+    description: "8+ years of software development, AI, Web3, medical billing and VA services from Rawalpindi, Pakistan.",
+    url: "https://zedrolabs.io/about",
+  },
 };
 
 
@@ -33,7 +39,7 @@ export default function AboutPage() {
           </h1>
           <p className="text-[#a8b8d8] text-lg max-w-[560px]">
             8+ years. 150+ projects. Clients on 3 continents. From DeFi protocols to hospital billing
-            systems — we deliver excellence across every vertical.
+            systems, we deliver excellence across every vertical.
           </p>
         </div>
       </section>
@@ -48,8 +54,8 @@ export default function AboutPage() {
               <Label>Our Story</Label>
               <Heading className="mb-5">Built on Excellence,<br /><span className="text-gradient">Delivered Daily</span></Heading>
               <p className="text-[#a8b8d8] mb-4">Founded in {COMPANY.founded} in Rawalpindi, ZedroLabs was built on a simple premise: Pakistan has world-class engineering talent, and the world deserves access to it at fair prices.</p>
-              <p className="text-[#a8b8d8] mb-4">Over 8+ years, we&apos;ve evolved from a web agency to a full-service IT company covering custom software, AI, blockchain, healthcare technology, and virtual services — all from one roof.</p>
-              <p className="text-[#a8b8d8] mb-8">Today, our 45+ person team serves clients across the US, UK, Europe, and the Gulf — delivering the quality of a Silicon Valley firm at Pakistan&apos;s unbeatable cost advantage.</p>
+              <p className="text-[#a8b8d8] mb-4">Over 8+ years, we&apos;ve evolved from a web agency to a full-service IT company covering custom software, AI, blockchain, healthcare technology, and virtual services, all from one roof.</p>
+              <p className="text-[#a8b8d8] mb-8">Today, our 45+ person team serves clients across the US, UK, Europe, and the Gulf, delivering the quality of a Silicon Valley firm at Pakistan&apos;s unbeatable cost advantage.</p>
               <Link href="/contact" className="btn-primary"><span>Work With Us →</span></Link>
             </Reveal>
             <Reveal delay={150}>
@@ -78,7 +84,7 @@ export default function AboutPage() {
               { icon:"🚀", t:"Ship Fast",           d:"Agile delivery, sprint-based development, continuous deployment." },
               { icon:"🛡️", t:"Security First",      d:"IP-protected, NDA-signed, security-audited everything we ship." },
               { icon:"🌍", t:"Global Standards",    d:"ISO-aligned, CMMI-inspired quality control on every project." },
-              { icon:"💬", t:"Radical Transparency", d:"Daily updates, shared dashboards, no surprises — ever." },
+              { icon:"💬", t:"Radical Transparency", d:"Daily updates, shared dashboards, no surprises. Ever." },
             ].map((v, i) => (
               <Reveal key={v.t} delay={i * 70}>
                 <div className="card p-7 h-full">

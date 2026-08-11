@@ -103,8 +103,8 @@ const PRICING: Record<string, ServiceData> = {
   },
 
   dev: {
-    description: "Pre-vetted, full-time engineers integrated directly into your team. Flat monthly rate — no recruitment, no payroll, no overhead.",
-    flexNote: "Need a specific stack, seniority mix, or tighter budget? We have 45+ engineers across all levels — reach out and we'll match you.",
+    description: "Pre-vetted, full-time engineers integrated directly into your team. Flat monthly rate: no recruitment, no payroll, no overhead.",
+    flexNote: "Need a specific stack, seniority mix, or tighter budget? We have 45+ engineers across all levels. Reach out and we'll match you.",
     tiers: [
       {
         name: "Starter",
@@ -172,7 +172,7 @@ const PRICING: Record<string, ServiceData> = {
   },
 
   software: {
-    description: "End-to-end custom software — from validated MVPs to enterprise-scale platforms. Fixed-price and time-and-material engagements available.",
+    description: "End-to-end custom software: from validated MVPs to enterprise-scale platforms. Fixed-price and time-and-material engagements available.",
     flexNote: "Software costs vary by scope. Share your requirements and we'll deliver a detailed fixed-price proposal within 48 hours.",
     tiers: [
       {
@@ -460,7 +460,7 @@ const PRICING: Record<string, ServiceData> = {
 
   cloud: {
     description: "Cloud architecture, Kubernetes, CI/CD pipelines, IaC, and cost-optimized multi-cloud solutions on AWS, Azure, and GCP.",
-    flexNote: "Cloud needs vary widely — one-time setup or ongoing management. Tell us your current state and goals, we'll price it transparently.",
+    flexNote: "Cloud needs vary widely: one-time setup or ongoing management. Tell us your current state and goals, we'll price it transparently.",
     tiers: [
       {
         name: "Audit & Setup",
@@ -522,7 +522,7 @@ const PRICING: Record<string, ServiceData> = {
           "Enterprise security & compliance",
           "24/7 monitoring & SLA guarantee",
           "Disaster recovery planning",
-          "FinOps — cloud cost governance",
+          "FinOps: cloud cost governance",
           "Quarterly architecture reviews",
         ],
         cta: "Request Enterprise Quote",
