@@ -2,8 +2,8 @@ export const COMPANY = {
   name:      "ZedroLabs",
   domain:    "zedrolabs.io",
   tagline:   "Software Development · Web3 · Virtual Assistants",
-  email:     "info@zedrolabs.io",
-  sales:     "sales@zedrolabs.io",
+  email:     "hr@zedrolabs.io",
+  sales:     "hr@zedrolabs.io",
   phone:     "+92 332 6551460",
   whatsapp:  "+92 332 6551460",
   founded:   "2016",
@@ -483,10 +483,16 @@ export const FAQS = [
   },
 ];
 
-export const TEAM = [
-  { name: "Muhammad Osama", role: "CEO & Founder", spec: "Full-Stack & Blockchain Engineering", emoji: "👨‍💼", linkedin: "#" },
+export const TEAM: { name: string; role: string; spec: string; emoji: string; linkedin: string; github?: string }[] = [
+  { name: "Muhammad Osama", role: "CEO & Founder", spec: "Full-Stack & Blockchain Engineering", emoji: "👨‍💼", linkedin: "#", github: "https://github.com/Usamahafiz8" },
   { name: "Aansa Khalid", role: "Co-Founder", spec: "Strategy & Operations", emoji: "👩‍💼", linkedin: "#" },
   { name: "Mahnoor", role: "Chief Designer", spec: "Product & UX Design", emoji: "🎨", linkedin: "#" },
   { name: "Ali Joyo", role: "Software Engineer", spec: "Full-Stack Development", emoji: "💻", linkedin: "#" },
   { name: "Subhan", role: "Project Manager", spec: "Delivery & Client Success", emoji: "🤝", linkedin: "#" },
+  { name: "Ahmed Zedro", role: "CEO & Founder", spec: "15+ yrs · Enterprise & Strategy", emoji: "👨‍💼", linkedin: "#" },
+  { name: "Sana Malik", role: "CTO", spec: "12+ yrs · Cloud, AI & Architecture", emoji: "👩‍💻", linkedin: "#" },
+  { name: "Omar Khan", role: "Head of Blockchain", spec: "8+ yrs · DeFi & Web3", emoji: "⛓️", linkedin: "#" },
+  { name: "Dr. Fatima Ali", role: "Healthcare Tech Lead", spec: "10+ yrs · RCM & HealthIT", emoji: "🏥", linkedin: "#" },
+  { name: "Usman Riaz", role: "Head of Design", spec: "9+ yrs · Product & UX", emoji: "🎨", linkedin: "#" },
+  { name: "Zara Hussain", role: "VA Operations Lead", spec: "7+ yrs · Remote Teams & Ops", emoji: "🤝", linkedin: "#" },
 ];

@@ -3,7 +3,7 @@ import Link from "next/link";
 import { STATS, TECH_STACK, TEAM, FAQS, COMPANY } from "@/lib/data";
 import { Label, Heading, Reveal, RedLine, Counter, FAQAccordion } from "@/components/ui";
 import { CTASection } from "@/components/sections/SharedSections";
-import { Check } from "lucide-react";
+import { Check, Github, Linkedin } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "About ZedroLabs: Software Development Company | Rawalpindi, Pakistan",
@@ -113,6 +113,22 @@ export default function AboutPage() {
                     <h4 className="font-bold text-[#f0f4ff]" style={{ fontFamily:"var(--font-display)", fontSize:"1.05rem" }}>{m.name}</h4>
                     <div className="text-[#e63939] text-[12px] font-semibold mb-1">{m.role}</div>
                     <p className="text-[12px] text-[#5a7090]">{m.spec}</p>
+                    {(m.github || (m.linkedin && m.linkedin !== "#")) && (
+                      <div className="flex gap-3 mt-2.5">
+                        {m.linkedin && m.linkedin !== "#" && (
+                          <a href={m.linkedin} target="_blank" rel="noopener noreferrer"
+                            className="text-[#5a7090] hover:text-[#e63939] transition-colors">
+                            <Linkedin size={15} />
+                          </a>
+                        )}
+                        {m.github && (
+                          <a href={m.github} target="_blank" rel="noopener noreferrer"
+                            className="text-[#5a7090] hover:text-[#e63939] transition-colors">
+                            <Github size={15} />
+                          </a>
+                        )}
+                      </div>
+                    )}
                   </div>
                 </div>
               </Reveal>
