@@ -15,7 +15,7 @@ export default function PortfolioPage() {
 
   return (
     <>
-      <section className="pt-16 bg-[#080c14] relative overflow-hidden min-h-[50vh] flex items-center">
+      <section className="pt-[var(--hdr-h)] bg-[#080c14] relative overflow-hidden min-h-[50vh] flex items-center">
         <div className="blob-1" style={{ top:"-200px", right:"-100px", opacity:0.4 }} />
         <div className="section-wrap relative z-10 py-24">
           <h1 className="t-hero text-[#f0f4ff] mb-5">

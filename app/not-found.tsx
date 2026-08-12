@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function NotFound() {
   return (
-    <div className="min-h-screen bg-[#080c14] flex items-center justify-center pt-16">
+    <div className="min-h-screen bg-[#080c14] flex items-center justify-center pt-[var(--hdr-h)]">
       <div className="text-center px-5">
         <div className="text-[8rem] font-black leading-none mb-4"
           style={{ fontFamily:"var(--font-display)", color:"rgba(193,39,45,0.15)" }}>404</div>

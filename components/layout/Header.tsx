@@ -11,6 +11,7 @@ const NAV = [
   {
     label: "Services", href: "/services",
     children: [
+      { label: "AI Forward-Deployed Eng.", href: "/services#ai-fde",             icon: "" },
       { label: "Custom Software",          href: "/services#custom-software",    icon: "" },
       { label: "Web3 & Blockchain",        href: "/services#web3",               icon: "" },
       { label: "Medical Billing",          href: "/services#medical-billing",    icon: "" },
@@ -39,7 +40,7 @@ export default function Header() {
   return (
     <header
       className={cn(
-        "fixed top-0 inset-x-0 z-50 transition-all duration-400",
+        "site-header fixed inset-x-0 z-50 transition-all duration-400",
         scrolled
           ? "bg-[rgba(8,12,20,0.97)] border-b border-[#1a2540] shadow-[0_8px_40px_rgba(0,0,0,0.6)]"
           : "bg-[rgba(8,12,20,0.7)] backdrop-blur-2xl border-b border-white/[0.04]"

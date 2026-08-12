@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import HeroSection from "@/components/sections/HeroSection";
+import AIHighlight from "@/components/sections/AIHighlight";
 import ServicesSection from "@/components/sections/ServicesSection";
 import ProductHighlight from "@/components/sections/ProductHighlight";
 import Web3Highlight from "@/components/sections/Web3Highlight";
@@ -16,6 +17,7 @@ export default function HomePage() {
   return (
     <>
       <HeroSection />
+      <AIHighlight />
       <ServicesSection />
       <ProductHighlight />
       <Web3Highlight />

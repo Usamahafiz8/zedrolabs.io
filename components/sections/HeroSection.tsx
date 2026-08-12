@@ -20,7 +20,7 @@ const TRUST = [
 export default function HeroSection() {
   return (
     <>
-      <section className="relative min-h-screen flex items-center pt-16 overflow-hidden" aria-label="Hero">
+      <section className="relative min-h-screen flex items-center pt-[var(--hdr-h)] overflow-hidden" aria-label="Hero">
         {/* Particle canvas */}
         <ParticleField />
 

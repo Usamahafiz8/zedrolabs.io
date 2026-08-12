@@ -25,6 +25,17 @@ export const MARQUEE_ITEMS = [
 
 export const CORE_SERVICES = [
   {
+    icon: "🧠",
+    title: "AI Forward-Deployed Engineering",
+    short: "Embedded AI Implementation Engineers",
+    desc: "Senior AI engineers embedded directly in your team to ship LLM features, agents, and internal copilots into your real product, not a slide deck.",
+    markets: ["B2B", "B2G"],
+    slug: "ai-fde",
+    color: "from-violet-900/30 to-transparent",
+    featured: true,
+    highlight: "🚀 New",
+  },
+  {
     icon: "💻",
     title: "Custom Software",
     short: "Web & Desktop Apps",
@@ -67,6 +78,17 @@ export const CORE_SERVICES = [
     featured: false,
     highlight: "From $640/mo",
   },
+];
+
+export const AI_FDE_SERVICES = [
+  { icon: "🧑‍💻", title: "Embedded AI Engineers", desc: "A senior AI engineer works inside your sprints, your repo, and your Slack, shipping real code, not a detached vendor team." },
+  { icon: "🔌", title: "LLM & Agent Integration", desc: "Custom RAG pipelines, tool-calling agents, and multi-agent orchestration wired directly into your existing stack." },
+  { icon: "🔍", title: "AI Discovery Sprints", desc: "Hands-on 2–3 week sprints to identify and prototype the highest-leverage AI use cases in your actual workflows." },
+  { icon: "🛠️", title: "Internal Copilots & Tooling", desc: "Custom internal copilots, support/ops automation, and AI-assisted tooling built on your own data." },
+  { icon: "🔗", title: "Data & API Integration", desc: "Secure connections between LLMs and your CRM, ERP, data warehouse, and internal APIs." },
+  { icon: "📊", title: "Evaluation & Guardrails", desc: "Prompt evaluation harnesses, hallucination guardrails, and production monitoring for every AI feature shipped." },
+  { icon: "⚙️", title: "MLOps & Model Deployment", desc: "Fine-tuning pipelines, vector database infra, and scalable inference deployment across providers." },
+  { icon: "🎯", title: "Outcome-Tied Delivery", desc: "Weekly reporting tied to your business KPIs, engineers own outcomes, not just tickets closed." },
 ];
 
 export const WEB3_SERVICES = [

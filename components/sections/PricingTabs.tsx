@@ -26,6 +26,7 @@ type ServiceData = {
 
 /* ── Tab definitions ── */
 const TABS = [
+  { id: "aifde",    label: "AI Forward-Deployed", icon: "🧠", badge: "From $2.4K"    },
   { id: "va",       label: "Virtual Assistants",  icon: "🤝", badge: "From $320/mo"  },
   { id: "dev",      label: "Dev Teams",            icon: "👥", badge: "From $750/mo"  },
   { id: "software", label: "Custom Software",      icon: "💻", badge: "From $4K"      },
@@ -34,6 +35,74 @@ const TABS = [
 
 /* ── Pricing data ── */
 const PRICING: Record<string, ServiceData> = {
+  aifde: {
+    description: "Senior AI engineers embedded directly in your team to design, ship, and own AI/LLM features in your real product, not a slide deck.",
+    flexNote: "Pricing depends on engagement length, embedded headcount, and whether you need a discovery sprint first. Share your AI roadmap and we'll scope it.",
+    tiers: [
+      {
+        name: "Discovery Sprint",
+        price: "from $6,000",
+        period: "one-time · 2–3 weeks",
+        priceNote: "Scope your highest-leverage AI use cases with a working prototype",
+        features: [
+          "Hands-on use-case discovery workshop",
+          "Working AI prototype, not a deck",
+          "Technical feasibility & data assessment",
+          "LLM/provider selection guidance",
+          "Roadmap for a full build",
+        ],
+        cta: "Book a Discovery Sprint",
+      },
+      {
+        name: "Embedded Engineer",
+        price: 3200,
+        period: "/month per engineer",
+        priceNote: "1 senior AI engineer embedded full-time in your team",
+        badge: "Most Popular",
+        featured: true,
+        features: [
+          "Senior AI/LLM engineer, dedicated",
+          "Works inside your repo & sprint cycle",
+          "Daily standups, full sprint integration",
+          "Ships features, not just prototypes",
+          "Weekly outcome reporting",
+          "30-day replacement guarantee",
+        ],
+        cta: "Embed an AI Engineer",
+      },
+      {
+        name: "Embedded Pod",
+        price: "from $8,800",
+        period: "/month",
+        priceNote: "2–3 AI engineers + tech lead, full feature ownership",
+        features: [
+          "Multi-engineer AI pod + tech lead",
+          "End-to-end feature ownership",
+          "RAG pipelines & agent orchestration",
+          "Evaluation harnesses & guardrails",
+          "MLOps & production monitoring",
+          "Priority support channel",
+        ],
+        cta: "Deploy an AI Pod",
+      },
+      {
+        name: "Enterprise",
+        price: "Custom",
+        custom: true,
+        priceNote: "Multi-team rollouts, custom SLAs & security review",
+        features: [
+          "Multiple embedded pods across teams",
+          "Custom SLAs & security review",
+          "Dedicated AI program manager",
+          "Compliance & data-governance support",
+          "Executive reporting & QBRs",
+          "Flexible contract terms",
+        ],
+        cta: "Talk to Us",
+      },
+    ],
+  },
+
   va: {
     description: "Dedicated, pre-vetted virtual assistants for any business function. English-fluent, professional, ready to onboard in 3–5 days.",
     flexNote: "Need custom hours, a mixed specialty team, or have a different budget in mind? We'll build a plan that fits.",
@@ -619,7 +688,7 @@ function PricingCard({ tier }: { tier: Tier }) {
 
 /* ── Main Export ── */
 export default function PricingTabs() {
-  const [active, setActive] = useState<string>("va");
+  const [active, setActive] = useState<string>("aifde");
   const service = PRICING[active];
 
   return (

@@ -45,6 +45,7 @@ export default function Footer() {
             <h5 className="text-xs font-bold tracking-[0.12em] uppercase text-[#f0f4ff] mb-5" style={{ fontFamily:"var(--font-mono)" }}>Services</h5>
             <ul className="space-y-2.5 text-sm text-[#5a7090]">
               {[
+                ["AI Forward-Deployed Eng.", "/services#ai-fde"],
                 ["Custom Software",       "/services#custom-software"],
                 ["Web3 & Blockchain",     "/services#web3"],
                 ["Medical Billing",       "/services#medical-billing"],

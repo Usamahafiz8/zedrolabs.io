@@ -46,7 +46,7 @@ export default function ContactPage() {
 
   return (
     <>
-      <section className="pt-16 bg-[#080c14] relative overflow-hidden min-h-[50vh] flex items-center">
+      <section className="pt-[var(--hdr-h)] bg-[#080c14] relative overflow-hidden min-h-[50vh] flex items-center">
         <div className="blob-1" style={{ top:"-200px", left:"-100px", opacity:0.35 }} />
         <div className="section-wrap relative z-10 py-20">
           <div className="max-w-[650px]">

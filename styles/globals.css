@@ -32,7 +32,21 @@
   --glow-cyan: 0 0 40px rgba(0,212,255,0.3);
   --r:         12px;
   --r-lg:      20px;
+
+  /* Header chrome offsets. --nav-h is the fixed nav bar's own height;
+     --banner-h is the top promo banner's height (0 when dismissed/absent);
+     --hdr-h is the total offset page content needs to clear both. */
+  --nav-h:    64px;
+  --banner-h: 0px;
+  --hdr-h:    calc(var(--nav-h) + var(--banner-h));
 }
+@media (min-width: 768px) {
+  :root { --nav-h: 70px; }
+}
+html.has-banner { --banner-h: 40px; }
+
+/* Fixed nav bar sits below the banner (0px when no banner is showing). */
+.site-header { top: var(--banner-h); }
 
 /* ── Reset & Base ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }

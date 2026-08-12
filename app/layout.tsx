@@ -3,6 +3,8 @@ import Script from "next/script";
 import "../styles/globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import PromoBanner from "@/components/layout/PromoBanner";
+import PromoPopup from "@/components/layout/PromoPopup";
 import Cursor from "@/components/ui/Cursor";
 import { COMPANY } from "@/lib/data";
 
@@ -68,6 +70,7 @@ export const metadata: Metadata = {
 
 /* ── JSON-LD Structured Data ── */
 const SERVICES_FOR_SCHEMA = [
+  { name: "AI Forward-Deployed Engineering", anchor: "ai-fde", type: "AI Implementation Engineering" },
   { name: "Custom Software Development", anchor: "custom-software", type: "Software Development" },
   { name: "Web3 & Blockchain Development", anchor: "web3", type: "Blockchain Development" },
   { name: "Medical Billing & Revenue Cycle Management", anchor: "medical-billing", type: "Medical Billing" },
@@ -134,9 +137,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className="bg-[#080c14] text-[#f0f4ff] antialiased">
         <Cursor />
+        <PromoBanner />
         <Header />
         <main id="main-content">{children}</main>
         <Footer />
+        <PromoPopup />
       </body>
     </html>
   );

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Script from "next/script";
 import {
-  CORE_SERVICES, WEB3_SERVICES, MEDICAL_BILLING_SERVICES, VA_SERVICES,
+  CORE_SERVICES, AI_FDE_SERVICES, WEB3_SERVICES, MEDICAL_BILLING_SERVICES, VA_SERVICES,
   TECH_STACK, FAQS,
 } from "@/lib/data";
 import { Label, Heading, Badge, Reveal, RedLine, FAQAccordion } from "@/components/ui";
@@ -15,6 +15,7 @@ export const metadata: Metadata = {
   description:
     "Everything ZedroLabs offers in one place: custom software, Web3/blockchain, medical billing & RCM, virtual assistants, and dedicated dev teams, with transparent pricing for every service.",
   keywords: [
+    "AI forward-deployed engineering", "embedded AI engineer", "AI implementation partner",
     "software development services", "IT services Pakistan", "web3 blockchain development",
     "medical billing services", "revenue cycle management", "virtual assistant services",
     "dedicated development team", "staff augmentation Pakistan", "ZedroLabs pricing",
@@ -29,6 +30,7 @@ export const metadata: Metadata = {
 };
 
 const QUICK_NAV = [
+  { id: "ai-fde",              label: "🧠 AI Forward-Deployed Eng." },
   { id: "custom-software",    label: "💻 Custom Software" },
   { id: "web3",               label: "⛓️ Web3 & Blockchain" },
   { id: "medical-billing",    label: "🏥 Medical Billing" },
@@ -44,6 +46,13 @@ const PROCESS = [
   { n: "04", t: "QA & Testing",         d: "Automated testing, performance benchmarking, security audit, UAT." },
   { n: "05", t: "Deployment",           d: "CI/CD pipeline, containerization, monitoring, production go-live." },
   { n: "06", t: "Support & Growth",     d: "Ongoing maintenance, feature additions, scaling, and SLA support." },
+];
+
+const AI_FDE_FAQS = [
+  { q: "What does \"forward-deployed\" actually mean?", a: "Instead of a detached consulting team handing you a slide deck, our AI engineer works embedded inside your team, your repo, and your sprint cycle, shipping production code against your real data and workflows." },
+  { q: "Do we have to start with a full engagement?", a: "No. Most clients start with a 2–3 week AI Discovery Sprint: we scope your highest-leverage AI use cases and ship a working prototype before committing to anything larger." },
+  { q: "Which LLM providers and stacks do you work with?", a: "OpenAI, Anthropic (Claude), and open-weight models via providers like Bedrock and Vertex AI. We integrate with your existing stack: Python/Node backends, vector databases, and your internal APIs." },
+  { q: "How is this priced?", a: "Either as embedded headcount, a dedicated AI engineer billed monthly like our dedicated dev teams, or as a fixed-price discovery sprint with a follow-on build. See exact pricing below." },
 ];
 
 const CHAINS = [
@@ -85,7 +94,7 @@ const VA_FAQS = [
   { q: "What hours do VAs work?", a: "Whatever hours you need: EST, PST, GMT, or Gulf timezone coverage." },
 ];
 
-const ALL_FAQS_FOR_SCHEMA = [...WEB3_FAQS, ...MED_FAQS, ...VA_FAQS, ...FAQS];
+const ALL_FAQS_FOR_SCHEMA = [...AI_FDE_FAQS, ...WEB3_FAQS, ...MED_FAQS, ...VA_FAQS, ...FAQS];
 const faqJsonLd = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -102,7 +111,7 @@ export default function ServicesPage() {
       <Script id="faq-jsonld" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 
       {/* Hero */}
-      <section className="pt-16 bg-[#080c14] relative overflow-hidden min-h-[55vh] flex items-center">
+      <section className="pt-[var(--hdr-h)] bg-[#080c14] relative overflow-hidden min-h-[55vh] flex items-center">
         <div className="bg-grid absolute inset-0 pointer-events-none opacity-60"
           style={{ backgroundImage:"linear-gradient(rgba(193,39,45,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(193,39,45,0.04) 1px,transparent 1px)", backgroundSize:"64px 64px",
             WebkitMaskImage:"radial-gradient(ellipse 80% 80% at 50% 0%, black 30%, transparent 100%)",
@@ -129,7 +138,7 @@ export default function ServicesPage() {
       <RedLine />
 
       {/* Quick nav */}
-      <div className="bg-[#0d1220] border-b border-[#1a2540] sticky top-16 md:top-[70px] z-40">
+      <div className="bg-[#0d1220] border-b border-[#1a2540] sticky top-[var(--hdr-h)] z-40">
         <div className="section-wrap py-3">
           <div className="flex gap-2 overflow-x-auto scrollbar-hide">
             {QUICK_NAV.map((n) => (
@@ -141,6 +150,73 @@ export default function ServicesPage() {
           </div>
         </div>
       </div>
+
+      {/* ── AI Forward-Deployed Engineering ── */}
+      <section id="ai-fde" className="py-section bg-[#080c14] relative overflow-hidden scroll-mt-32">
+        <div className="absolute -top-40 left-[15%] w-[550px] h-[550px] rounded-full pointer-events-none"
+          style={{ background:"radial-gradient(circle,rgba(124,58,237,0.12) 0%,transparent 70%)", filter:"blur(60px)" }} />
+        <div className="section-wrap relative z-10">
+          <Reveal>
+            <div className="inline-flex items-center gap-2.5 border border-[rgba(124,58,237,0.35)] rounded-full px-4 py-2 text-[12px] font-bold text-[#a78bfa] mb-6"
+              style={{ fontFamily:"var(--font-mono)", background:"rgba(124,58,237,0.08)" }}>
+              🧠 Embedded AI Engineers · Shipping in Weeks
+            </div>
+            <Heading className="mb-5">Ship AI That<br /><span style={{ color:"#a78bfa" }}>Actually Works</span></Heading>
+            <p className="text-[#a8b8d8] max-w-[640px] mb-10">
+              Most AI initiatives stall in slide decks. We embed senior AI engineers directly inside your
+              team, your repo, and your sprint cycle to design, build, and ship real LLM features, agents,
+              and internal copilots into your product, not a proof-of-concept that never ships.
+            </p>
+          </Reveal>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
+            {AI_FDE_SERVICES.map((s, i) => (
+              <Reveal key={s.title} delay={i * 60}>
+                <div className="card p-7 h-full group hover:border-[rgba(124,58,237,0.35)]">
+                  <div className="text-3xl mb-4 group-hover:scale-110 transition-transform">{s.icon}</div>
+                  <h3 className="font-bold text-[#f0f4ff] mb-2 text-[1rem]" style={{ fontFamily:"var(--font-display)" }}>{s.title}</h3>
+                  <p className="text-[13px] text-[#5a7090] leading-relaxed">{s.desc}</p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center mb-12">
+            <Reveal>
+              <div className="grid grid-cols-2 gap-4">
+                {[
+                  { icon:<Zap size={22}/>,   title:"2–3 Wks",     desc:"To a working AI prototype in your discovery sprint", color:"#a78bfa" },
+                  { icon:<Shield size={22}/>, title:"Embedded",   desc:"Engineers work inside your repo, sprints & Slack",    color:"#00d4ff" },
+                  { icon:<Globe size={22}/>, title:"Your Stack",  desc:"Integrated with your APIs, data & infrastructure",     color:"#f5a623" },
+                  { icon:<Check size={22}/>, title:"Weekly",      desc:"Outcome reporting tied to your business KPIs",         color:"#00ff88" },
+                ].map((s) => (
+                  <div key={s.title} className="card p-6 text-center">
+                    <div className="mb-3" style={{ color: s.color }}>{s.icon}</div>
+                    <div className="font-black text-[1.4rem] text-[#f0f4ff]" style={{ fontFamily:"var(--font-display)" }}>{s.title}</div>
+                    <p className="text-[12px] text-[#5a7090] mt-1">{s.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </Reveal>
+            <Reveal delay={100}>
+              <div className="flex flex-wrap gap-2.5">
+                {["OpenAI", "Anthropic / Claude", "LangChain", "RAG Pipelines", "Vector DBs", "Bedrock", "Vertex AI", "Agent Orchestration"].map((t) => (
+                  <span key={t} className="px-3.5 py-2 rounded-lg text-[12px] text-[#a78bfa] border border-[rgba(124,58,237,0.25)] bg-[rgba(124,58,237,0.06)]">{t}</span>
+                ))}
+              </div>
+              <div className="flex gap-3 mt-6 flex-wrap">
+                <Link href="/contact" className="flex items-center justify-center gap-2 py-3.5 px-6 rounded-xl text-sm font-semibold text-white transition-transform hover:-translate-y-0.5"
+                  style={{ background:"linear-gradient(135deg,#7c3aed,#5b3df0)" }}>
+                  Book a Discovery Sprint →
+                </Link>
+                <a href="#pricing" className="btn-ghost">See AI engagement pricing ↓</a>
+              </div>
+            </Reveal>
+          </div>
+
+          <Reveal><FAQAccordion faqs={AI_FDE_FAQS} /></Reveal>
+        </div>
+      </section>
 
       {/* ── Custom Software ── */}
       <section id="custom-software" className="py-section bg-[#0d1220] scroll-mt-32">

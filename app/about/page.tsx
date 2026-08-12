@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <div>
-      <section className="pt-16 bg-[#080c14] relative overflow-hidden min-h-[60vh] flex items-center">
+      <section className="pt-[var(--hdr-h)] bg-[#080c14] relative overflow-hidden min-h-[60vh] flex items-center">
         <div className="bg-grid absolute inset-0 pointer-events-none opacity-60"
           style={{ backgroundImage:"linear-gradient(rgba(193,39,45,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(193,39,45,0.04) 1px,transparent 1px)", backgroundSize:"64px 64px",
             WebkitMaskImage:"radial-gradient(ellipse 80% 80% at 50% 0%, black 30%, transparent 100%)",
