@@ -27,7 +27,7 @@ type ServiceData = {
 /* ── Tab definitions ── */
 const TABS = [
   { id: "va",       label: "Virtual Assistants",  icon: "🤝", badge: "From $320/mo"  },
-  { id: "dev",      label: "Dev Teams",            icon: "👥", badge: "From $640/mo"  },
+  { id: "dev",      label: "Dev Teams",            icon: "👥", badge: "From $750/mo"  },
   { id: "software", label: "Custom Software",      icon: "💻", badge: "From $4K"      },
   { id: "web3",     label: "Web3 & Blockchain",    icon: "⛓️", badge: "From $2.4K"    },
 ];
@@ -109,7 +109,7 @@ const PRICING: Record<string, ServiceData> = {
     tiers: [
       {
         name: "Starter",
-        price: 640,
+        price: 750,
         period: "/month per resource",
         priceNote: "Junior devs & QA · 160–180 hrs/month",
         features: [
@@ -123,7 +123,7 @@ const PRICING: Record<string, ServiceData> = {
       },
       {
         name: "Standard",
-        price: 960,
+        price: 1150,
         period: "/month per resource",
         priceNote: "Mid-level · full-stack, mobile, DevOps",
         badge: "Most Popular",
@@ -140,7 +140,7 @@ const PRICING: Record<string, ServiceData> = {
       },
       {
         name: "Premium",
-        price: 1440,
+        price: 1750,
         period: "/month per resource",
         priceNote: "Senior · AI/ML, Web3, architects",
         features: [
